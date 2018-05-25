@@ -18,4 +18,4 @@ add_executable(CalculatorService main.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusStubAdapter.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceStubDefault.cpp)
 
-target_link_libraries(CalculatorService CommonAPI CommonAPI-DBus dbus-1)
+target_link_libraries(CalculatorService CommonAPI CommonAPI-DBus dbus-1 pthread)

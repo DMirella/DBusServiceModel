@@ -71,6 +71,8 @@ CalculatorServiceStubImpl.hpp
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+TaskManager.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 -
 
@@ -89,6 +91,14 @@ thread
 -
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/Service.hpp
+
+/home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
+thread
+-
+queue
+-
+condition_variable
+-
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/main.cpp
 DBusCalculatorService.hpp

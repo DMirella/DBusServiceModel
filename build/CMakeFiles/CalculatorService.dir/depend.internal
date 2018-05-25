@@ -7,6 +7,7 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
  /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.cpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/ByteBuffer.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
@@ -109,6 +110,7 @@ CMakeFiles/CalculatorService.dir/main.cpp.o
  /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/DBusService.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/Service.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/main.cpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
