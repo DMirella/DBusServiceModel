@@ -1,0 +1,3 @@
+/home/dima/work/DBusServiceModel/build/CMakeFiles/rebuild_cache.dir
+/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir
+/home/dima/work/DBusServiceModel/build/CMakeFiles/edit_cache.dir
