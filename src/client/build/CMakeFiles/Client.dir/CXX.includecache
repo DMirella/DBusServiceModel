@@ -55,13 +55,21 @@ future
 -
 
 /home/dima/work/DBusServiceModel/src/client/Client.cpp
+DBusClientService.hpp
+/home/dima/work/DBusServiceModel/src/client/DBusClientService.hpp
 iostream
+-
+
+/home/dima/work/DBusServiceModel/src/client/DBusClientService.hpp
+unistd.h
+-
+thread
+-
+CommonAPI/CommonAPI.hpp
 -
 string
 -
-unistd.h
--
-CommonAPI/CommonAPI.hpp
+functional
 -
 v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
 -

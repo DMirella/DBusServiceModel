@@ -16,8 +16,8 @@ set(V1_COM_LUXOFT_PATH /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/ca
 
 
 add_executable(Client Client.cpp
-				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusDeployment.cpp
-				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusProxy.cpp)
+		      ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusDeployment.cpp
+		      ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusProxy.cpp)
 
 
-target_link_libraries(Client  CommonAPI CommonAPI-DBus dbus-1)
+target_link_libraries(Client CommonAPI CommonAPI-DBus dbus-1)

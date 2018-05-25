@@ -5,6 +5,7 @@ CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/
 CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
 CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceProxyBase.hpp
 CMakeFiles/Client.dir/Client.cpp.o: ../Client.cpp
+CMakeFiles/Client.dir/Client.cpp.o: ../DBusClientService.hpp
 CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
 CMakeFiles/Client.dir/Client.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp

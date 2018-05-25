@@ -1,28 +1,37 @@
+//will be edit int future
+
+#include "DBusClientService.hpp"
 #include <iostream>
-#include <string>
-#include <unistd.h>
-#include <CommonAPI/CommonAPI.hpp>
-#include <v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp>
-  
-using namespace v1::com::luxoft::calculatorservice;
+#include <vector>
+#include <ctime>
 
 
-void recv_rev(CommonAPI::CallStatus callstatus, const int &out){
-	std::cout << "Thank you for result, server: " << out << std::endl;
+void onSumResultRecieved(const int& answer){
+  std::cout << "Answer for sum: " << answer << std::endl;
+}
+
+void onMulResultRecieved(const int& answer){
+  std::cout << "Answer for mul: " << answer << std::endl;
+}
+
+void onDivResultRecieved(const int& answer){
+  std::cout << "Answer for divide: " << answer << std::endl;
+}
+
+void onDedResultRecieved(const int& answer){
+  std::cout << "Answer for deduct: " << answer << std::endl;
 }
 
 int main(){
-	std::shared_ptr<CommonAPI::Runtime> runtime = CommonAPI::Runtime::get();
-	std::shared_ptr<CalculatorServiceProxy<>> proxy 
-		= runtime->buildProxy<CalculatorServiceProxy>("", "CalculatorService");
+  DBusCalculatorServiceClient service("CalculatorService");
+  service.makeConnection();
 	
-	std::cout << "Client available.\n";
-        while(!proxy->isAvailable())usleep(10);
 	
-	while(1){
-		proxy->divideAsync(6, 2, recv_rev);
-		usleep(19000);
-	}
-	
-	return 0;
+
+  while(1){
+  switch(rand())
+    service.getSumAsync(6, 2, onSumResultRecieved);
+     usleep(19000);
+  }
+  return 0;
 }
