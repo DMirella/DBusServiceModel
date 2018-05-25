@@ -3,7 +3,6 @@
 
 #include <functional>
 
-namespace{
 
 using VoidFuncWithIntParam = std::function<void (int32_t _result)>;
 
@@ -21,7 +20,6 @@ class TaskWithIntReply {
   VoidFuncWithIntParam reply_;
 };
 
-} // end namespace
 
 
 class Task {

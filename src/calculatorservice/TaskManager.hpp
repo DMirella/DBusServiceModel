@@ -50,6 +50,7 @@ class TaskSolver{
   }
  private:
   void taskSolverThreadLogic() { 
+    //std::this_thread::sleep_for(std::chrono::seconds(2));
     std::unique_lock<std::mutex> lock(*mutex_);
     auto task_query_copy = task_query_;
     while(true) {
@@ -72,13 +73,17 @@ class TaskSolver{
 
 
 class TaskManager {
+ using TaskSolverPtr = std::shared_ptr<TaskSolver>; 
  public:
   TaskManager() 
-      : mutex_(std::make_shared<std::mutex>()),
+     /* : mutex_(std::make_shared<std::mutex>()),
 	task_query_(std::make_shared<TaskQuery>(mutex_)), 
 	threads_regulator_(std::make_shared<std::condition_variable>()),
-	task_solver_(task_query_, threads_regulator_){
-    
+	task_solver_(task_query_, threads_regulator_)*/{
+    mutex_ = std::make_shared<std::mutex>();
+    task_query_ = std::make_shared<TaskQuery>(mutex_); 
+    threads_regulator_ = std::make_shared<std::condition_variable>();
+    task_solver_ = std::make_shared<TaskSolver>(task_query_, threads_regulator_);
   }
 
   void addTaskToQuery(TaskPtr task) {
@@ -88,8 +93,8 @@ class TaskManager {
 
  private:
 
-  TaskQueryPtr task_query_;
-  TaskSolver task_solver_;
+  TaskQueryPtr  task_query_;
+  TaskSolverPtr task_solver_;
   ConditionVariablePtr threads_regulator_;
   MutexPtr mutex_;
 };

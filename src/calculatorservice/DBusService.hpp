@@ -10,13 +10,15 @@ template<typename ServiceType_>
 class DBusService : public Service{
 
  public:
-  DBusService(std::string name, std::unique_ptr<ServiceType_> &&service)
+  DBusService(std::string name, std::unique_ptr<ServiceType_> service)
     : name_(std::move(name)), service_(std::move(service)) {
     runtime_ = CommonAPI::Runtime::get();
     runtime_->registerService("", name_, service_);
   }
 
-  virtual void startService() override { }
+  virtual void startService() override { 
+    service_thread_ = std::make_unique<std::thread>(&DBusService::doServiceThread, this);
+  }
   
  protected:
   virtual void doServiceThread() = 0;

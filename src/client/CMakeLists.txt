@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(CalculatorService)
+project(Client)
 
 
 include_directories(~/work/DBusServiceModel/src-gen
@@ -15,11 +15,9 @@ set(V1_COM_LUXOFT_PATH /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/ca
 
 
 
-add_executable(CalculatorService main.cpp
-				 CalculatorServiceStubImpl.cpp
+add_executable(Client Client.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusDeployment.cpp
-				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusStubAdapter.cpp
-				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceStubDefault.cpp)
+				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusProxy.cpp)
 
 
-target_link_libraries(CalculatorService pthread CommonAPI CommonAPI-DBus dbus-1)
+target_link_libraries(Client  CommonAPI CommonAPI-DBus dbus-1)
