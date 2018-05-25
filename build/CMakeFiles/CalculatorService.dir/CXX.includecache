@@ -92,7 +92,13 @@ thread
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/Service.hpp
 
+/home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+functional
+-
+
 /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
+Task.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
 thread
 -
 queue

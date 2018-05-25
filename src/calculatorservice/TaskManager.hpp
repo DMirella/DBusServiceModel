@@ -1,15 +1,13 @@
 #ifndef TASKMANAGER_H_
 #define TASKMANAGER_H_
 
+#include "Task.hpp"
+
 #include <thread>
 #include <queue>
 #include <condition_variable>
 
 class TaskQuery;
-
-
-class Task {
-};
 
 namespace{
 
@@ -30,6 +28,9 @@ class TaskQuery{
     task_query_.push(task); 
   }
 
+  inline void popTask() { task_query_.pop(); }
+
+  inline TaskPtr frontTask() const { return task_query_.front(); }
   inline MutexPtr mutex() const { return mutex_; }
   inline bool isTaskQueryEmpty() const { return task_query_.empty(); }
  private:
@@ -56,7 +57,9 @@ class TaskSolver{
         return !task_query_copy->isTaskQueryEmpty();
       });
 
-      //solve some task
+      auto currentTask = task_query_->frontTask();
+      currentTask->solve();
+      task_query_->popTask();
     }
   }
 
