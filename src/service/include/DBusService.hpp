@@ -24,11 +24,12 @@ class DBusService : public Service {
   }
 
   virtual void startService() override { 
-    service_thread_ = std::make_unique<std::thread>(&DBusService::doServiceThread, this);
+    service_thread_ 
+        = std::make_unique<std::thread>(&DBusService::doServiceThread, this);
   }
 
-
-  DBusService(const DBusService&) = delete;  // needs for security, can be overrided in future
+  // Needs for security, can be overrided in future
+  DBusService(const DBusService&) = delete;  
   
  protected:
   virtual void doServiceThread() = 0;

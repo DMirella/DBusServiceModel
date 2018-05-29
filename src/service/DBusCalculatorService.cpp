@@ -1,5 +1,4 @@
 #include "DBusCalculatorService.hpp"
-
 #include <iostream>
 
 const size_t DBusCalculatorService::DEFAULT_SLEEP_SECONDS = 5;
