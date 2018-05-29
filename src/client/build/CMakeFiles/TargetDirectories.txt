@@ -1,3 +1,0 @@
-/home/dima/work/DBusServiceModel/src/client/build/CMakeFiles/rebuild_cache.dir
-/home/dima/work/DBusServiceModel/src/client/build/CMakeFiles/Client.dir
-/home/dima/work/DBusServiceModel/src/client/build/CMakeFiles/edit_cache.dir
