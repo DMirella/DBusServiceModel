@@ -5,7 +5,9 @@
 #include <mutex>
 #include <queue>
 
-
+/**
+* This Queue can be synchronized by shared mutex
+*/
 template<typename QueueType_>
 class SyncQueue {
  using MutexSharedPtr = std::shared_ptr<std::mutex>;

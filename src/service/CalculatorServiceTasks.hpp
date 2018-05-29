@@ -6,8 +6,11 @@
 #include <functional>
 #include <thread>
 
+/*This defines helps to test the system if it could solve a more time-consuming tasks.*/
 #define HARD_TASK_TIME 200
 #define TESTING_HARD_TASKS_MODEL
+
+
 
 namespace{
 
@@ -62,7 +65,7 @@ class TaskDivide : public ServiceTask::Task, public TaskWithIntReply, public Tas
       : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
   virtual void solve() override;
  private:
-  constexpr static int INFINITY = (1ll << 31) - 1; 
+  constexpr static int INFINITY = (1ll << 31) - 1;  // for x/0 case
 };
 
 

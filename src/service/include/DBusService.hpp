@@ -9,6 +9,9 @@
 namespace Service{
 namespace DBusService{
 
+/**
+* Standart CommonAPI-DBus service interface
+*/
 template<typename ServiceType_>
 class DBusService : public Service {
  using ServiceTypeSharedPtr = std::shared_ptr<ServiceType_>;
@@ -25,7 +28,7 @@ class DBusService : public Service {
   }
 
 
-  DBusService(const DBusService&) = delete;
+  DBusService(const DBusService&) = delete;  // needs for security, can be overrided in future
   
  protected:
   virtual void doServiceThread() = 0;

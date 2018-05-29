@@ -4,6 +4,7 @@
 #include "TaskManager.hpp"
 #include <v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp>
 
+
 class CalculatorServiceStubImpl : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault {
  public:
   CalculatorServiceStubImpl() { }

@@ -20,18 +20,28 @@ using TaskSyncQueueSharedPtr = std::shared_ptr<TaskSyncQueue>;
 
 }  // end namespace
 
+
+/**
+* Synchronizes with the queue that is passed in the constructor parameters, and solves the problem as it arrives.
+*/
 class TaskSolver{
  public:
-  TaskSolver(TaskSyncQueueSharedPtr task_queue, 
+  TaskSolver(TaskSyncQueueSharedPtr task_queue,  
              ConditionVariableSharedPtr threads_regulator) 
       : task_queue_(task_queue),
         threads_regulator_(threads_regulator) {
     task_solver_thread_ = std::make_unique<std::thread>(&TaskSolver::taskSolverThreadLogic, this);
-    mutex_ = task_queue_->mutex();
+    mutex_ = task_queue_->mutex();  // synchronize with SyncQueue by use shared mutex
   }
+
+  TaskSolver(const TaskSolver&) = delete;  // for security, in the future can be overridden
  private:
+
+  /**
+  * If SyncQueue have more then 0 tasks, starts to solve front task and pop it
+  */
   void taskSolverThreadLogic() { 
-    auto task_queue_copy = task_queue_;
+    auto task_queue_copy = task_queue_; 
     while(true) {
       std::unique_lock<std::mutex> lock(*mutex_);
       threads_regulator_->wait(lock, [&task_queue_copy]() {
@@ -52,7 +62,9 @@ class TaskSolver{
 };
 
 
-
+/**
+* Create a SyncQueue and TaskSolver and managed their.
+*/
 class TaskManager {
  using TaskSolverSharedPtr = std::shared_ptr<TaskSolver>; 
 
@@ -62,8 +74,11 @@ class TaskManager {
     threads_regulator_ = std::make_shared<std::condition_variable>();
     task_solver_ = std::make_shared<TaskSolver>(task_queue_, threads_regulator_);
   }
-
-  void addTaskToQuery(TaskSharedPtr task) {
+  
+  /**
+  * Add Task to SyncQueue, then notify TaskSolver by conditon_variable(threads_regulator_), display log info.
+  */
+  void addTaskToQueue(TaskSharedPtr task) {
     static int cnt = 0;
     std::cout << "Reg task #" << ++cnt << std::endl;
     task_queue_->push(task);

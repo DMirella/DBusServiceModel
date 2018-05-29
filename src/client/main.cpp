@@ -3,7 +3,7 @@
 #include <vector>
 #include <ctime>
 
-
+/* On answer recieved functions */
 void onSumResultRecieved(const int& answer){
   std::cout << "Answer for sum: " << answer << std::endl;
 }
