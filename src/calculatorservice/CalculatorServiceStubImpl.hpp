@@ -1,5 +1,5 @@
-#ifndef CALCULATORSERVICE_STUBIMPL_H_
-#define CALCULATORSERVICE_STUBIMPL_H_
+#ifndef CALCULATOR_SERVICE_STUB_IMPL_HPP_
+#define CALCULATOR_SERVICE_STUB_IMPL_HPP_
 
 #include "TaskManager.hpp"
 #include <v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp>
@@ -18,4 +18,4 @@ class CalculatorServiceStubImpl : public v1::com::luxoft::calculatorservice::Cal
   TaskManager task_manager_;
 };
 
-#endif  //CALCULATORSERVICE_STUBIMPL_H_
+#endif  // CALCULATOR_SERVICE_STUB_IMPL_HPP_

@@ -69,6 +69,8 @@ sstream
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.cpp
 CalculatorServiceStubImpl.hpp
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+CalculatorServiceTasks.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
 TaskManager.hpp
@@ -76,13 +78,29 @@ TaskManager.hpp
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 -
 
+/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp
+CalculatorServiceTasks.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
+
+/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
+Task.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+functional
+-
+thread
+-
+
+/home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp
+DBusCalculatorService.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.hpp
+iostream
+-
+
 /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.hpp
 DBusService.hpp
 /home/dima/work/DBusServiceModel/src/calculatorservice/DBusService.hpp
 CalculatorServiceStubImpl.hpp
 /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
-iostream
--
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/DBusService.hpp
 Service.hpp
@@ -105,12 +123,6 @@ queue
 -
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
-functional
--
-thread
--
-iostream
--
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
 Task.hpp

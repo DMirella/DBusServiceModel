@@ -105,9 +105,57 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o.provides: CMake
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o.provides.build: CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
 
 
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o: CMakeFiles/CalculatorService.dir/flags.make
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o -c /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp > CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.i
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp -o CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.s
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.requires:
+
+.PHONY : CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.requires
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.provides: CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.provides.build
+.PHONY : CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.provides
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.provides.build: CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o
+
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: CMakeFiles/CalculatorService.dir/flags.make
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o -c /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp > CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.i
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp -o CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.s
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.requires:
+
+.PHONY : CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.requires
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.provides: CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.provides.build
+.PHONY : CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.provides
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.provides.build: CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o
+
+
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: CMakeFiles/CalculatorService.dir/flags.make
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o -c /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.i: cmake_force
@@ -131,7 +179,7 @@ CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o: CMakeFiles/CalculatorService.dir/flags.make
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o -c /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.i: cmake_force
@@ -155,7 +203,7 @@ CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o: CMakeFiles/CalculatorService.dir/flags.make
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o -c /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.i: cmake_force
@@ -181,6 +229,8 @@ CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/
 CalculatorService_OBJECTS = \
 "CMakeFiles/CalculatorService.dir/main.cpp.o" \
 "CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o" \
+"CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o" \
+"CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
@@ -190,12 +240,14 @@ CalculatorService_EXTERNAL_OBJECTS =
 
 CalculatorService: CMakeFiles/CalculatorService.dir/main.cpp.o
 CalculatorService: CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
+CalculatorService: CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o
+CalculatorService: CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o
 CalculatorService: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 CalculatorService: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o
 CalculatorService: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o
 CalculatorService: CMakeFiles/CalculatorService.dir/build.make
 CalculatorService: CMakeFiles/CalculatorService.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CalculatorService"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CalculatorService"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CalculatorService.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -205,6 +257,8 @@ CMakeFiles/CalculatorService.dir/build: CalculatorService
 
 CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/main.cpp.o.requires
 CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o.requires
+CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o.requires
+CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o.requires
 CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o.requires
 CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o.requires
 CMakeFiles/CalculatorService.dir/requires: CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o.requires

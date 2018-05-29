@@ -1,5 +1,5 @@
-#ifndef DBUSSERVICE_H_
-#define DBUSSERVICE_H_
+#ifndef DBUS_SERVICE_HPP_
+#define DBUS_SERVICE_HPP_
 
 #include "Service.hpp"
 
@@ -7,10 +7,11 @@
 #include <thread>
 
 template<typename ServiceType_>
-class DBusService : public Service{
+class DBusService : public Service {
+ using ServiceTypeSharedPtr = std::shared_ptr<ServiceType_>;
 
  public:
-  DBusService(std::string name, std::unique_ptr<ServiceType_> service)
+  DBusService(std::string name, ServiceTypeSharedPtr service)
     : name_(std::move(name)), service_(std::move(service)) {
     runtime_ = CommonAPI::Runtime::get();
     runtime_->registerService("", name_, service_);
@@ -22,13 +23,13 @@ class DBusService : public Service{
   
  protected:
   virtual void doServiceThread() = 0;
+  std::string name_;
 
  private:
-  std::shared_ptr<ServiceType_> service_;
-  std::shared_ptr<CommonAPI::Runtime> runtime_;
-  
-  std::string name_;
+  ServiceTypeSharedPtr service_;
+
+  std::shared_ptr<CommonAPI::Runtime> runtime_;  
   std::unique_ptr<std::thread> service_thread_;
 };
 
-#endif  //DBUSSERVICE_H_
+#endif  // DBUS_SERVICE_HPP_

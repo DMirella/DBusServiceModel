@@ -6,6 +6,7 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/wor
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.cpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
@@ -17,6 +18,38 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/wor
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
+
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorService.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStub.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/DBusService.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/Service.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/ByteBuffer.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/CallInfo.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/CommonAPI.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Config.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp
 CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.hpp

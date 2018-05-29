@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp" "/home/dima/work/DBusServiceModel/build/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"

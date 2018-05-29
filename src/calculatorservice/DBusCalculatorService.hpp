@@ -1,22 +1,20 @@
-#ifndef DBUSCALCULATORSERVICE_H_
-#define DBUSCALCULATORSERVICE_H_
+#ifndef DBUS_CALCULATOR_SERVICE_HPP_
+#define DBUS_CALCULATOR_SERVICE_HPP_
 
 #include "DBusService.hpp"
 #include "CalculatorServiceStubImpl.hpp"
 
-#include <iostream>
 
-
-class DBusCalculatorService : public DBusService<CalculatorServiceStubImpl>{
+class DBusCalculatorService : public DBusService<CalculatorServiceStubImpl> {
  public:
   DBusCalculatorService(std::string name) 
-    : DBusService(std::move(name), std::make_unique<CalculatorServiceStubImpl>()) {
+    : DBusService(std::move(name), std::make_shared<CalculatorServiceStubImpl>()) {
   }
  protected:
-  virtual void doServiceThread() override { 
-    std::cout << "Calculator service was started.\n";
-    while(true) { std::this_thread::sleep_for(std::chrono::seconds(5)); } 
-  }
+  virtual void doServiceThread() override;
+
+ private:
+  const static size_t DEFAULT_SLEEP_SECONDS;
 };
 
-#endif  //DBUSCALCULATORSERVICE_H_
+#endif  // DBUS_CALCULATOR_SERVICE_HPP_

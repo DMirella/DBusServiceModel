@@ -187,6 +187,9 @@ CalculatorService_BINARY_DIR:STATIC=/home/dima/work/DBusServiceModel/build
 //Value Computed by CMake
 CalculatorService_SOURCE_DIR:STATIC=/home/dima/work/DBusServiceModel/src/calculatorservice
 
+//default send timeout
+DEFAULT_SEND_TIMEOUT:STRING=10000
+
 
 ########################
 # INTERNAL cache entries

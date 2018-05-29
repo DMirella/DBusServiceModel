@@ -17,6 +17,8 @@ set(V1_COM_LUXOFT_PATH /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/ca
 
 add_executable(CalculatorService main.cpp
 				 CalculatorServiceStubImpl.cpp
+				 CalculatorServiceTasks.cpp
+				 DBusCalculatorService.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusDeployment.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceDBusStubAdapter.cpp
 				 ${V1_COM_LUXOFT_PATH}/CalculatorServiceStubDefault.cpp)

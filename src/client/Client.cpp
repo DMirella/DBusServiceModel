@@ -1,7 +1,4 @@
-//will be edit int future
-
-#include "DBusClientService.hpp"
-//#include "ClientService.hpp"
+#include "ClientCalculatorDBusService.hpp"
 #include <iostream>
 #include <vector>
 #include <ctime>
@@ -23,19 +20,23 @@ void onDedResultRecieved(const int& answer){
   std::cout << "Answer for deduct: " << answer << std::endl;
 }
 
+
+
 int main(){
-  DBusCalculatorServiceClient service("CalculatorService");
+  srand(time(0));
+
+  ClientCalculatorDBusService service("CalculatorService");
   service.makeConnection();
 	
 	
   int cnt = 0;
   while(1){
-    switch(rand() % 1){
+    cnt++;
+    switch(rand() % 4){
      case 0:
-       cnt++;
        service.getSumAsync(6, 2, onSumResultRecieved);
        break;
-     /*case 1:
+     case 1:
        service.getDeductAsync(6, 2, onDedResultRecieved);
        break;
      case 2:
@@ -43,7 +44,7 @@ int main(){
        break;
      case 3:
        service.getMultiplyAsync(6, 2, onMulResultRecieved);
-       break;*/
+       break;
     }
     std::cout << "Service call #" << cnt << std::endl;
     usleep(100000);

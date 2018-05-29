@@ -65,7 +65,7 @@ class TaskManager {
 
   void addTaskToQuery(TaskSharedPtr task) {
     static int cnt = 0;
-    std::cout << "Reg task #" << cnt++ << std::endl;
+    std::cout << "Reg task #" << ++cnt << std::endl;
     task_queue_->push(task);
     threads_regulator_->notify_one();
   }

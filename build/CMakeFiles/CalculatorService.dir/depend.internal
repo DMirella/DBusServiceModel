@@ -7,6 +7,7 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
  /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.cpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
  /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
@@ -15,6 +16,38 @@ CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
+CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o
+ /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.cpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceTasks.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o
+ /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorService.hpp
+ /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStub.hpp
+ /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/CalculatorServiceStubImpl.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.cpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/DBusCalculatorService.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/DBusService.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/Service.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+ /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/AttributeExtension.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/ByteBuffer.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/CallInfo.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/CommonAPI.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Config.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/ContainerUtils.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Event.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Export.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
+ /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp

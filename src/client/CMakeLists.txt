@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 project(Client)
 
+SET(DEFAULT_SEND_TIMEOUT "10000" CACHE STRING "default send timeout")
+message(STATUS "DEFAULT_SEND_TIMEOUT is set to value: ${DEFAULT_SEND_TIMEOUT} ms")
 
 include_directories(~/work/DBusServiceModel/src-gen
 		    ~/work/capicxx-core-runtime/include

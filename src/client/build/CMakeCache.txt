@@ -187,6 +187,9 @@ Client_BINARY_DIR:STATIC=/home/dima/work/DBusServiceModel/src/client/build
 //Value Computed by CMake
 Client_SOURCE_DIR:STATIC=/home/dima/work/DBusServiceModel/src/client
 
+//default send timeout
+DEFAULT_SEND_TIMEOUT:STRING=10000
+
 
 ########################
 # INTERNAL cache entries

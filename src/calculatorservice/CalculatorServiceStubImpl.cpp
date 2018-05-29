@@ -1,4 +1,5 @@
 #include "CalculatorServiceStubImpl.hpp"
+#include "CalculatorServiceTasks.hpp"
 
 void CalculatorServiceStubImpl::sum(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _valueA, int32_t _valueB, sumReply_t _reply) {
 	task_manager_.addTaskToQuery(std::make_shared<TaskSum>(_valueA, _valueB, _reply));

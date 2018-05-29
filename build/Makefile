@@ -150,6 +150,60 @@ CalculatorServiceStubImpl.cpp.s:
 	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.s
 .PHONY : CalculatorServiceStubImpl.cpp.s
 
+CalculatorServiceTasks.o: CalculatorServiceTasks.cpp.o
+
+.PHONY : CalculatorServiceTasks.o
+
+# target to build an object file
+CalculatorServiceTasks.cpp.o:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o
+.PHONY : CalculatorServiceTasks.cpp.o
+
+CalculatorServiceTasks.i: CalculatorServiceTasks.cpp.i
+
+.PHONY : CalculatorServiceTasks.i
+
+# target to preprocess a source file
+CalculatorServiceTasks.cpp.i:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.i
+.PHONY : CalculatorServiceTasks.cpp.i
+
+CalculatorServiceTasks.s: CalculatorServiceTasks.cpp.s
+
+.PHONY : CalculatorServiceTasks.s
+
+# target to generate assembly for a file
+CalculatorServiceTasks.cpp.s:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.s
+.PHONY : CalculatorServiceTasks.cpp.s
+
+DBusCalculatorService.o: DBusCalculatorService.cpp.o
+
+.PHONY : DBusCalculatorService.o
+
+# target to build an object file
+DBusCalculatorService.cpp.o:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o
+.PHONY : DBusCalculatorService.cpp.o
+
+DBusCalculatorService.i: DBusCalculatorService.cpp.i
+
+.PHONY : DBusCalculatorService.i
+
+# target to preprocess a source file
+DBusCalculatorService.cpp.i:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.i
+.PHONY : DBusCalculatorService.cpp.i
+
+DBusCalculatorService.s: DBusCalculatorService.cpp.s
+
+.PHONY : DBusCalculatorService.s
+
+# target to generate assembly for a file
+DBusCalculatorService.cpp.s:
+	$(MAKE) -f CMakeFiles/CalculatorService.dir/build.make CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.s
+.PHONY : DBusCalculatorService.cpp.s
+
 home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o: home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 
 .PHONY : home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o
@@ -270,6 +324,12 @@ help:
 	@echo "... CalculatorServiceStubImpl.o"
 	@echo "... CalculatorServiceStubImpl.i"
 	@echo "... CalculatorServiceStubImpl.s"
+	@echo "... CalculatorServiceTasks.o"
+	@echo "... CalculatorServiceTasks.i"
+	@echo "... CalculatorServiceTasks.s"
+	@echo "... DBusCalculatorService.o"
+	@echo "... DBusCalculatorService.i"
+	@echo "... DBusCalculatorService.s"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.i"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.s"
