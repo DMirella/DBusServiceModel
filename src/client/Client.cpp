@@ -1,6 +1,7 @@
 //will be edit int future
 
 #include "DBusClientService.hpp"
+//#include "ClientService.hpp"
 #include <iostream>
 #include <vector>
 #include <ctime>
@@ -27,11 +28,25 @@ int main(){
   service.makeConnection();
 	
 	
-
+  int cnt = 0;
   while(1){
-  switch(rand())
-    service.getSumAsync(6, 2, onSumResultRecieved);
-     usleep(19000);
+    switch(rand() % 1){
+     case 0:
+       cnt++;
+       service.getSumAsync(6, 2, onSumResultRecieved);
+       break;
+     /*case 1:
+       service.getDeductAsync(6, 2, onDedResultRecieved);
+       break;
+     case 2:
+       service.getDivideAsync(6, 2, onDivResultRecieved);
+       break;
+     case 3:
+       service.getMultiplyAsync(6, 2, onMulResultRecieved);
+       break;*/
+    }
+    std::cout << "Service call #" << cnt << std::endl;
+    usleep(100000);
   }
   return 0;
 }

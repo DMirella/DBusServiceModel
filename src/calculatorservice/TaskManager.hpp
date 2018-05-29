@@ -2,101 +2,79 @@
 #define TASKMANAGER_H_
 
 #include "Task.hpp"
+#include "SyncQueue.hpp"
 
+#include <iostream>
 #include <thread>
 #include <queue>
 #include <condition_variable>
 
-class TaskQuery;
 
 namespace{
 
-using MutexPtr = std::shared_ptr<std::mutex>;
-using TaskQueryPtr = std::shared_ptr<TaskQuery>;
-using ConditionVariablePtr = std::shared_ptr<std::condition_variable>;
-using TaskPtr = std::shared_ptr<Task>;
+using TaskSharedPtr = std::shared_ptr<Task>;
+using MutexSharedPtr = std::shared_ptr<std::mutex>;
+using ConditionVariableSharedPtr = std::shared_ptr<std::condition_variable>;
+using TaskSyncQueue = SyncQueue<TaskSharedPtr>;
+using TaskSyncQueueSharedPtr = std::shared_ptr<TaskSyncQueue>;
 
-}
-
-
-class TaskQuery{
-
- public:
-  TaskQuery(MutexPtr mutex) : mutex_(mutex) { }
-  void addTaskToQuery(TaskPtr task) { 
-    std::lock_guard<std::mutex> lock(*mutex_);
-    task_query_.push(task); 
-  }
-
-  inline void popTask() { task_query_.pop(); }
-
-  inline TaskPtr frontTask() const { return task_query_.front(); }
-  inline MutexPtr mutex() const { return mutex_; }
-  inline bool isTaskQueryEmpty() const { return task_query_.empty(); }
- private:
-  MutexPtr mutex_;
-  std::queue<TaskPtr> task_query_;
-};
-
+}  // end namespace
 
 class TaskSolver{
  public:
-  TaskSolver(TaskQueryPtr task_query, 
-             ConditionVariablePtr threads_regulator) 
-      : task_query_(task_query), 
-        task_solver_thread_(std::thread(&TaskSolver::taskSolverThreadLogic, this)),
+  TaskSolver(TaskSyncQueueSharedPtr task_queue, 
+             ConditionVariableSharedPtr threads_regulator) 
+      : task_queue_(task_queue),
         threads_regulator_(threads_regulator) {
-    mutex_ = task_query_->mutex();
+    task_solver_thread_ = std::make_unique<std::thread>(&TaskSolver::taskSolverThreadLogic, this);
+    mutex_ = task_queue_->mutex();
   }
  private:
   void taskSolverThreadLogic() { 
-    //std::this_thread::sleep_for(std::chrono::seconds(2));
-    std::unique_lock<std::mutex> lock(*mutex_);
-    auto task_query_copy = task_query_;
+    auto task_queue_copy = task_queue_;
     while(true) {
-      threads_regulator_->wait(lock, [&task_query_copy]() {
-        return !task_query_copy->isTaskQueryEmpty();
+      std::unique_lock<std::mutex> lock(*mutex_);
+      threads_regulator_->wait(lock, [&task_queue_copy]() {
+        return !task_queue_copy->empty();
       });
-
-      auto currentTask = task_query_->frontTask();
-      currentTask->solve();
-      task_query_->popTask();
+      
+      std::cout << "Task queue size: " << task_queue_->size() << std::endl;
+      auto current_task = task_queue_->front();
+      current_task->solve();
+      task_queue_->pop();
     }
   }
 
-  std::thread task_solver_thread_;
-  ConditionVariablePtr threads_regulator_;
-  TaskQueryPtr task_query_;
-  MutexPtr mutex_;
+  std::unique_ptr<std::thread> task_solver_thread_;
+  ConditionVariableSharedPtr threads_regulator_;
+  TaskSyncQueueSharedPtr task_queue_;
+  MutexSharedPtr mutex_;
 };
 
 
 
 class TaskManager {
- using TaskSolverPtr = std::shared_ptr<TaskSolver>; 
+ using TaskSolverSharedPtr = std::shared_ptr<TaskSolver>; 
+
  public:
-  TaskManager() 
-     /* : mutex_(std::make_shared<std::mutex>()),
-	task_query_(std::make_shared<TaskQuery>(mutex_)), 
-	threads_regulator_(std::make_shared<std::condition_variable>()),
-	task_solver_(task_query_, threads_regulator_)*/{
-    mutex_ = std::make_shared<std::mutex>();
-    task_query_ = std::make_shared<TaskQuery>(mutex_); 
+  TaskManager() {
+    task_queue_ = std::make_shared<TaskSyncQueue>(); 
     threads_regulator_ = std::make_shared<std::condition_variable>();
-    task_solver_ = std::make_shared<TaskSolver>(task_query_, threads_regulator_);
+    task_solver_ = std::make_shared<TaskSolver>(task_queue_, threads_regulator_);
   }
 
-  void addTaskToQuery(TaskPtr task) {
-    task_query_->addTaskToQuery(task);
-    threads_regulator_->notify_all();
+  void addTaskToQuery(TaskSharedPtr task) {
+    static int cnt = 0;
+    std::cout << "Reg task #" << cnt++ << std::endl;
+    task_queue_->push(task);
+    threads_regulator_->notify_one();
   }
 
  private:
 
-  TaskQueryPtr  task_query_;
-  TaskSolverPtr task_solver_;
-  ConditionVariablePtr threads_regulator_;
-  MutexPtr mutex_;
+  TaskSyncQueueSharedPtr task_queue_;
+  TaskSolverSharedPtr task_solver_;
+  ConditionVariableSharedPtr threads_regulator_;
 };
 
 

@@ -96,13 +96,29 @@ thread
 iostream
 -
 
+/home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
+memory
+-
+mutex
+-
+queue
+-
+
 /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
 functional
+-
+thread
+-
+iostream
 -
 
 /home/dima/work/DBusServiceModel/src/calculatorservice/TaskManager.hpp
 Task.hpp
 /home/dima/work/DBusServiceModel/src/calculatorservice/Task.hpp
+SyncQueue.hpp
+/home/dima/work/DBusServiceModel/src/calculatorservice/SyncQueue.hpp
+iostream
+-
 thread
 -
 queue

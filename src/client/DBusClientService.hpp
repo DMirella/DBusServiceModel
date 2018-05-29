@@ -21,25 +21,26 @@ class DBusCalculatorServiceClient{
 
   void getSumAsync(const int& value_a, const int& value_b, std::function<void(const int&)> on_answer_function) const {
     service_proxy_->sumAsync(value_a, value_b, 
-    [&on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
+    [on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
+      std::cout << "Check callstatus success: " << CommonAPI::DEFAULT_SEND_TIMEOUT_MS << std::endl;
       on_answer_function(out);
     });
   }
   void getDivideAsync(const int& value_a, const int& value_b, std::function<void(const int&)> on_answer_function) const {
     service_proxy_->divideAsync(value_a, value_b, 
-    [&on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
+    [on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
       on_answer_function(out);
     });
   }
   void getDeductAsync(const int& value_a, const int& value_b, std::function<void(const int&)> on_answer_function) const {
     service_proxy_->deductAsync(value_a, value_b, 
-    [&on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
+    [on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
       on_answer_function(out);
     });
   }
   void getMultiplyAsync(const int& value_a, const int& value_b, std::function<void(const int&)> on_answer_function) const {
     service_proxy_->multiplyAsync(value_a, value_b, 
-    [&on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
+    [on_answer_function](CommonAPI::CallStatus callstatus, const int &out) {
       on_answer_function(out);
     });
   }

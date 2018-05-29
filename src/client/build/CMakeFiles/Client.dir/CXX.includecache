@@ -59,6 +59,10 @@ DBusClientService.hpp
 /home/dima/work/DBusServiceModel/src/client/DBusClientService.hpp
 iostream
 -
+vector
+-
+ctime
+-
 
 /home/dima/work/DBusServiceModel/src/client/DBusClientService.hpp
 unistd.h

@@ -2,6 +2,8 @@
 #define TASK_H_
 
 #include <functional>
+#include <thread>
+#include <iostream>
 
 
 using VoidFuncWithIntParam = std::function<void (int32_t _result)>;
@@ -33,6 +35,8 @@ class TaskSum : public Task, public TaskWithIntReply, public TaskWithTwoIntParam
   TaskSum(int value_a, int value_b, VoidFuncWithIntParam reply) 
       : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
   virtual void solve() override {
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    std::cout << "TaskSum: " << value_a_ << " " << value_b_ << std::endl;
     reply_(value_a_ + value_b_);
   }
 };
@@ -70,7 +74,7 @@ class TaskDivide : public Task, public TaskWithIntReply, public TaskWithTwoIntPa
     reply_(answer);
   }
  private:
-  const int INFINITY = (1ll << 31) - 1; 
+  constexpr static int INFINITY = (1ll << 31) - 1; 
 };
 
 
