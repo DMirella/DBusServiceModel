@@ -5,7 +5,7 @@
 #include "CalculatorServiceStubImpl.hpp"
 
 class DBusCalculatorService 
-     : public Service::DBusService::DBusService<CalculatorServiceStubImpl> {
+    : public Service::DBusService::DBusService<CalculatorServiceStubImpl> {
  public:
   explicit DBusCalculatorService(std::string name) 
     : DBusService(std::move(name), 
@@ -14,7 +14,7 @@ class DBusCalculatorService
  protected:
   virtual void doServiceThread() override;
  private:
-  const static size_t DEFAULT_SLEEP_SECONDS;
+  const static size_t kDefualtSleepSeconds;
 };
 
 #endif  // DBUS_CALCULATOR_SERVICE_HPP_

@@ -4,13 +4,11 @@
 #include <iostream>
 
 namespace Service{
-
 class Service {
  public:
-  Service() { }
+  Service() {}
   virtual void startService() = 0;
 };
-
 }  // namespace Service
 
 #endif  //SERVICE_HPP_

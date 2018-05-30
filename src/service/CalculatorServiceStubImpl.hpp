@@ -8,16 +8,16 @@
 class CalculatorServiceStubImpl
     : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault {
  public:
-  CalculatorServiceStubImpl() { }
-  virtual ~CalculatorServiceStubImpl() { }
+  CalculatorServiceStubImpl() {}
+  virtual ~CalculatorServiceStubImpl() {}
   virtual void sum(const std::shared_ptr<CommonAPI::ClientId> _client, 
-      int32_t _valueA, int32_t _valueB, sumReply_t _reply);
+      		   int32_t _valueA, int32_t _valueB, sumReply_t _reply) override;
   virtual void deduct(const std::shared_ptr<CommonAPI::ClientId> _client, 
-      int32_t _valueA, int32_t _valueB, deductReply_t _reply);
+      		      int32_t _valueA, int32_t _valueB, deductReply_t _reply) override;
   virtual void multiply(const std::shared_ptr<CommonAPI::ClientId> _client, 
-      int32_t _valueA, int32_t _valueB, multiplyReply_t _reply);
+      			int32_t _valueA, int32_t _valueB, multiplyReply_t _reply) override;
   virtual void divide(const std::shared_ptr<CommonAPI::ClientId> _client, 
-      int32_t _valueA, int32_t _valueB, divideReply_t _reply);
+      		      int32_t _valueA, int32_t _valueB, divideReply_t _reply) override;
  private:
   TaskManager task_manager_;
 };

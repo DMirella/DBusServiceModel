@@ -77,8 +77,6 @@ ClientCalculatorDBusService.hpp
 /home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.hpp
 iostream
 -
-vector
--
 ctime
 -
 

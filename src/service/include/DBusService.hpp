@@ -9,9 +9,7 @@
 namespace Service{
 namespace DBusService{
 
-/**
-* Standart CommonAPI-DBus service interface
-*/
+/* Standart CommonAPI-DBus service interface */
 template<typename ServiceType_>
 class DBusService : public Service {
  using ServiceTypeSharedPtr = std::shared_ptr<ServiceType_>;
@@ -22,18 +20,13 @@ class DBusService : public Service {
     runtime_ = CommonAPI::Runtime::get();
     runtime_->registerService("", name_, service_);
   }
-
   virtual void startService() override { 
-    service_thread_ 
-        = std::make_unique<std::thread>(&DBusService::doServiceThread, this);
+    service_thread_ = std::make_unique<std::thread>(&DBusService::doServiceThread, this);
   }
-
-  // Needs for security, can be overrided in future
+  /* Needs for security, can be overrided in future */
   DBusService(const DBusService&) = delete;  
-  
  protected:
   virtual void doServiceThread() = 0;
-
  private:
   std::string name_;
   ServiceTypeSharedPtr service_;
