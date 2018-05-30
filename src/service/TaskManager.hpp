@@ -16,7 +16,6 @@ using TaskSyncQueue = SyncQueue<TaskSharedPtr>;
 using TaskSyncQueueSharedPtr = std::shared_ptr<TaskSyncQueue>;
 }  // namespace
 
-
 /* Synchronizes with the queue that is passed in the constructor *
  * parameters, and solves the problem as it arrives. */
 class TaskSolver{
@@ -51,7 +50,6 @@ class TaskSolver{
   MutexSharedPtr mutex_;
 };
 
-
 /* Create a SyncQueue and TaskSolver and managed their. */
 class TaskManager {
  using TaskSolverSharedPtr = std::shared_ptr<TaskSolver>; 
@@ -74,7 +72,6 @@ class TaskManager {
   TaskSolverSharedPtr task_solver_;
   ConditionVariableSharedPtr threads_regulator_;
 };
-
 
 /* P.s. I understand that using std::cout by default for the status of service 
  * status flag is bad, it was more correct to make a file transfer 

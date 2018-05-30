@@ -12,16 +12,14 @@
 
 namespace{
 using VoidFuncWithIntParam = std::function<void (int32_t _result)>;
-
 /* I thought that it was a good solution to avoid tautology declaring classes with similar data */
 class TaskWithTwoIntParams {
  public:
   TaskWithTwoIntParams(int value_a, int value_b) 
-    : value_a_(value_a), value_b_(value_b) { }
+    : value_a_(value_a), value_b_(value_b) {}
  protected:
   int value_a_, value_b_;
 };
-
 class TaskWithIntReply {
  public:
   explicit TaskWithIntReply(VoidFuncWithIntParam reply) { reply_ = reply; }
@@ -29,7 +27,6 @@ class TaskWithIntReply {
   VoidFuncWithIntParam reply_;
 };
 /************************************************************************************************/
-
 } // namespace
 
 /* The tasks do the elementary operations(+, -, *, /) with value_a_ and value_b_ 
@@ -39,7 +36,7 @@ class TaskSum : public ServiceTask::Task,
                 public TaskWithTwoIntParams {
  public:
   TaskSum(int value_a, int value_b, VoidFuncWithIntParam reply) 
-    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
+    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
 
@@ -48,7 +45,7 @@ class TaskDeduct : public ServiceTask::Task,
                    public TaskWithTwoIntParams {
  public:
   TaskDeduct(int value_a, int value_b, VoidFuncWithIntParam reply) 
-    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
+    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
 
@@ -57,7 +54,7 @@ class TaskMultiply : public ServiceTask::Task,
                      public TaskWithTwoIntParams {
  public:
   TaskMultiply(int value_a, int value_b, VoidFuncWithIntParam reply) 
-    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
+    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
 
@@ -66,7 +63,7 @@ class TaskDivide : public ServiceTask::Task,
 		   public TaskWithTwoIntParams {
  public:
   TaskDivide(int value_a, int value_b, VoidFuncWithIntParam reply) 
-    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) { }
+    : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
  private:
   constexpr static int kInfinity = (1ll << 31) - 1;  // for x/0 case, local infinity
