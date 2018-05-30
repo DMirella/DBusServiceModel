@@ -18,13 +18,13 @@ class ClientCalculatorDBusService {
   }
 
   void getSumAsync(const int& value_a, const int& value_b, 
-      std::function<void(const int&)> on_answer_function) const;
+                   std::function<void(const int&)> on_answer_function) const;
   void getDivideAsync(const int& value_a, const int& value_b, 
-      std::function<void(const int&)> on_answer_function) const;
+                   std::function<void(const int&)> on_answer_function) const;
   void getDeductAsync(const int& value_a, const int& value_b, 
-      std::function<void(const int&)> on_answer_function) const;
+                      std::function<void(const int&)> on_answer_function) const;
   void getMultiplyAsync(const int& value_a, const int& value_b, 
-      std::function<void(const int&)> on_answer_function) const;
+                        std::function<void(const int&)> on_answer_function) const;
  private:
   std::string service_name_;
   std::shared_ptr<CommonAPI::Runtime> runtime_;

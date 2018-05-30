@@ -8,8 +8,7 @@ class DBusCalculatorService
     : public Service::DBusService::DBusService<CalculatorServiceStubImpl> {
  public:
   explicit DBusCalculatorService(std::string name) 
-    : DBusService(std::move(name), 
-      std::make_shared<CalculatorServiceStubImpl>()) {
+    : DBusService(std::move(name), std::make_shared<CalculatorServiceStubImpl>()) {
   }
  protected:
   virtual void doServiceThread() override;

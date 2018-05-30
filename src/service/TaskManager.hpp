@@ -28,7 +28,6 @@ class TaskSolver{
     task_solver_thread_ = std::make_unique<std::thread>(&TaskSolver::taskSolverThreadLogic, this);
     mutex_ = task_queue_->mutex();
   }
-
   // for security, in the future can be overridden
   TaskSolver(const TaskSolver&) = delete;  
  private:
@@ -56,7 +55,6 @@ class TaskSolver{
 /* Create a SyncQueue and TaskSolver and managed their. */
 class TaskManager {
  using TaskSolverSharedPtr = std::shared_ptr<TaskSolver>; 
-
  public:
   TaskManager() {
     task_queue_ = std::make_shared<TaskSyncQueue>(); 
