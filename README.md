@@ -42,9 +42,9 @@ Now, consider the client side(src/client).
 -------------------------------------------------------------------------------------
 Unfortunately, I did not manage to 
 make such a generalized API for the client's side. Everything rests on the problem 
-of that it is impossible to write a template-virtual function. In fact, I can make 
-a less generalized API (at least using lines to identify the methods), but it 
-still will not turn out so beautiful as on the client side, so I decided to leave it as it is.
+of that it is impossible to write a template-virtual function. In fact, I can try to make 
+generalized API (at least using lines to identify the methods), but it 
+still will not turn out so beautiful as on the service side, so I decided to leave it as it is.
 
 
 ClientCalculatorDBusService.hpp/ClientCalculatorDBusService.cpp - 
@@ -54,6 +54,8 @@ It works like a proxy, which recieves client queries and directs their to dbus s
 main.cpp - demonstrate possible use of created API.
 
 
+
 Also cmake_includes contain one include file, which contains cmake-sets for using commonapi-dbus libraries.
+
 
 Thanks, for attention.
