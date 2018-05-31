@@ -125,86 +125,86 @@ CalculatorService/fast:
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/build
 .PHONY : CalculatorService/fast
 
-CalculatorServiceStubImpl.o: CalculatorServiceStubImpl.cpp.o
+calculator_service_stub_impl.o: calculator_service_stub_impl.cc.o
 
-.PHONY : CalculatorServiceStubImpl.o
-
-# target to build an object file
-CalculatorServiceStubImpl.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o
-.PHONY : CalculatorServiceStubImpl.cpp.o
-
-CalculatorServiceStubImpl.i: CalculatorServiceStubImpl.cpp.i
-
-.PHONY : CalculatorServiceStubImpl.i
-
-# target to preprocess a source file
-CalculatorServiceStubImpl.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.i
-.PHONY : CalculatorServiceStubImpl.cpp.i
-
-CalculatorServiceStubImpl.s: CalculatorServiceStubImpl.cpp.s
-
-.PHONY : CalculatorServiceStubImpl.s
-
-# target to generate assembly for a file
-CalculatorServiceStubImpl.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.s
-.PHONY : CalculatorServiceStubImpl.cpp.s
-
-CalculatorServiceTasks.o: CalculatorServiceTasks.cpp.o
-
-.PHONY : CalculatorServiceTasks.o
+.PHONY : calculator_service_stub_impl.o
 
 # target to build an object file
-CalculatorServiceTasks.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o
-.PHONY : CalculatorServiceTasks.cpp.o
+calculator_service_stub_impl.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o
+.PHONY : calculator_service_stub_impl.cc.o
 
-CalculatorServiceTasks.i: CalculatorServiceTasks.cpp.i
+calculator_service_stub_impl.i: calculator_service_stub_impl.cc.i
 
-.PHONY : CalculatorServiceTasks.i
+.PHONY : calculator_service_stub_impl.i
 
 # target to preprocess a source file
-CalculatorServiceTasks.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.i
-.PHONY : CalculatorServiceTasks.cpp.i
+calculator_service_stub_impl.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.i
+.PHONY : calculator_service_stub_impl.cc.i
 
-CalculatorServiceTasks.s: CalculatorServiceTasks.cpp.s
+calculator_service_stub_impl.s: calculator_service_stub_impl.cc.s
 
-.PHONY : CalculatorServiceTasks.s
+.PHONY : calculator_service_stub_impl.s
 
 # target to generate assembly for a file
-CalculatorServiceTasks.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.s
-.PHONY : CalculatorServiceTasks.cpp.s
+calculator_service_stub_impl.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.s
+.PHONY : calculator_service_stub_impl.cc.s
 
-DBusCalculatorService.o: DBusCalculatorService.cpp.o
+calculator_service_tasks.o: calculator_service_tasks.cc.o
 
-.PHONY : DBusCalculatorService.o
+.PHONY : calculator_service_tasks.o
 
 # target to build an object file
-DBusCalculatorService.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o
-.PHONY : DBusCalculatorService.cpp.o
+calculator_service_tasks.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o
+.PHONY : calculator_service_tasks.cc.o
 
-DBusCalculatorService.i: DBusCalculatorService.cpp.i
+calculator_service_tasks.i: calculator_service_tasks.cc.i
 
-.PHONY : DBusCalculatorService.i
+.PHONY : calculator_service_tasks.i
 
 # target to preprocess a source file
-DBusCalculatorService.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.i
-.PHONY : DBusCalculatorService.cpp.i
+calculator_service_tasks.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.i
+.PHONY : calculator_service_tasks.cc.i
 
-DBusCalculatorService.s: DBusCalculatorService.cpp.s
+calculator_service_tasks.s: calculator_service_tasks.cc.s
 
-.PHONY : DBusCalculatorService.s
+.PHONY : calculator_service_tasks.s
 
 # target to generate assembly for a file
-DBusCalculatorService.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.s
-.PHONY : DBusCalculatorService.cpp.s
+calculator_service_tasks.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.s
+.PHONY : calculator_service_tasks.cc.s
+
+dbus_calculator_service.o: dbus_calculator_service.cc.o
+
+.PHONY : dbus_calculator_service.o
+
+# target to build an object file
+dbus_calculator_service.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o
+.PHONY : dbus_calculator_service.cc.o
+
+dbus_calculator_service.i: dbus_calculator_service.cc.i
+
+.PHONY : dbus_calculator_service.i
+
+# target to preprocess a source file
+dbus_calculator_service.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.i
+.PHONY : dbus_calculator_service.cc.i
+
+dbus_calculator_service.s: dbus_calculator_service.cc.s
+
+.PHONY : dbus_calculator_service.s
+
+# target to generate assembly for a file
+dbus_calculator_service.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.s
+.PHONY : dbus_calculator_service.cc.s
 
 home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o: home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 
@@ -287,32 +287,32 @@ home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/Calculat
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.s
 .PHONY : home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.s
 
-main.o: main.cpp.o
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.cpp.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -323,15 +323,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CalculatorService"
 	@echo "... edit_cache"
-	@echo "... CalculatorServiceStubImpl.o"
-	@echo "... CalculatorServiceStubImpl.i"
-	@echo "... CalculatorServiceStubImpl.s"
-	@echo "... CalculatorServiceTasks.o"
-	@echo "... CalculatorServiceTasks.i"
-	@echo "... CalculatorServiceTasks.s"
-	@echo "... DBusCalculatorService.o"
-	@echo "... DBusCalculatorService.i"
-	@echo "... DBusCalculatorService.s"
+	@echo "... calculator_service_stub_impl.o"
+	@echo "... calculator_service_stub_impl.i"
+	@echo "... calculator_service_stub_impl.s"
+	@echo "... calculator_service_tasks.o"
+	@echo "... calculator_service_tasks.i"
+	@echo "... calculator_service_tasks.s"
+	@echo "... dbus_calculator_service.o"
+	@echo "... dbus_calculator_service.i"
+	@echo "... dbus_calculator_service.s"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.i"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.s"

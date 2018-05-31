@@ -1,8 +1,8 @@
 #ifndef DBUS_CALCULATOR_SERVICE_HPP_
 #define DBUS_CALCULATOR_SERVICE_HPP_
 
-#include "DBusService.hpp"
-#include "CalculatorServiceStubImpl.hpp"
+#include "dbus_service.h"
+#include "calculator_service_stub_impl.h"
 
 class DBusCalculatorService 
     : public Service::DBusService::DBusService<CalculatorServiceStubImpl> {

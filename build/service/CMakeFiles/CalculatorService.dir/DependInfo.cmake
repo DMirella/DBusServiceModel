@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dima/work/DBusServiceModel/src/service/CalculatorServiceStubImpl.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/CalculatorServiceStubImpl.cpp.o"
-  "/home/dima/work/DBusServiceModel/src/service/CalculatorServiceTasks.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/CalculatorServiceTasks.cpp.o"
-  "/home/dima/work/DBusServiceModel/src/service/DBusCalculatorService.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/DBusCalculatorService.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o"
+  "/home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o"
+  "/home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
-  "/home/dima/work/DBusServiceModel/src/service/main.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/main.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/service/main.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

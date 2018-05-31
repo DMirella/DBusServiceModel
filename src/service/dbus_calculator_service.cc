@@ -1,4 +1,4 @@
-#include "DBusCalculatorService.hpp"
+#include "dbus_calculator_service.h"
 #include <iostream>
 
 const size_t DBusCalculatorService::kDefualtSleepSeconds = 5;

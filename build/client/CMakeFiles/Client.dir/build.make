@@ -57,52 +57,52 @@ include client/CMakeFiles/Client.dir/progress.make
 # Include the compile flags for this target's objects.
 include client/CMakeFiles/Client.dir/flags.make
 
-client/CMakeFiles/Client.dir/main.cpp.o: client/CMakeFiles/Client.dir/flags.make
-client/CMakeFiles/Client.dir/main.cpp.o: /home/dima/work/DBusServiceModel/src/client/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object client/CMakeFiles/Client.dir/main.cpp.o"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/main.cpp.o -c /home/dima/work/DBusServiceModel/src/client/main.cpp
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o: client/CMakeFiles/Client.dir/flags.make
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o: /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o -c /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc
 
-client/CMakeFiles/Client.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/main.cpp.i"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/client/main.cpp > CMakeFiles/Client.dir/main.cpp.i
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/client_calculator_dbus_service.cc.i"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc > CMakeFiles/Client.dir/client_calculator_dbus_service.cc.i
 
-client/CMakeFiles/Client.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/main.cpp.s"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/client/main.cpp -o CMakeFiles/Client.dir/main.cpp.s
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/client_calculator_dbus_service.cc.s"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc -o CMakeFiles/Client.dir/client_calculator_dbus_service.cc.s
 
-client/CMakeFiles/Client.dir/main.cpp.o.requires:
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.requires:
 
-.PHONY : client/CMakeFiles/Client.dir/main.cpp.o.requires
+.PHONY : client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.requires
 
-client/CMakeFiles/Client.dir/main.cpp.o.provides: client/CMakeFiles/Client.dir/main.cpp.o.requires
-	$(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cpp.o.provides.build
-.PHONY : client/CMakeFiles/Client.dir/main.cpp.o.provides
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.provides: client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.requires
+	$(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.provides.build
+.PHONY : client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.provides
 
-client/CMakeFiles/Client.dir/main.cpp.o.provides.build: client/CMakeFiles/Client.dir/main.cpp.o
+client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.provides.build: client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o
 
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o: client/CMakeFiles/Client.dir/flags.make
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o: /home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o -c /home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp
+client/CMakeFiles/Client.dir/main.cc.o: client/CMakeFiles/Client.dir/flags.make
+client/CMakeFiles/Client.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/client/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object client/CMakeFiles/Client.dir/main.cc.o"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/main.cc.o -c /home/dima/work/DBusServiceModel/src/client/main.cc
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.i"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp > CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.i
+client/CMakeFiles/Client.dir/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/main.cc.i"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/client/main.cc > CMakeFiles/Client.dir/main.cc.i
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.s"
-	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp -o CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.s
+client/CMakeFiles/Client.dir/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/main.cc.s"
+	cd /home/dima/work/DBusServiceModel/build/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/client/main.cc -o CMakeFiles/Client.dir/main.cc.s
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.requires:
+client/CMakeFiles/Client.dir/main.cc.o.requires:
 
-.PHONY : client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.requires
+.PHONY : client/CMakeFiles/Client.dir/main.cc.o.requires
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.provides: client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.requires
-	$(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.provides.build
-.PHONY : client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.provides
+client/CMakeFiles/Client.dir/main.cc.o.provides: client/CMakeFiles/Client.dir/main.cc.o.requires
+	$(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cc.o.provides.build
+.PHONY : client/CMakeFiles/Client.dir/main.cc.o.provides
 
-client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.provides.build: client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o
+client/CMakeFiles/Client.dir/main.cc.o.provides.build: client/CMakeFiles/Client.dir/main.cc.o
 
 
 client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: client/CMakeFiles/Client.dir/flags.make
@@ -155,16 +155,16 @@ client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxo
 
 # Object files for target Client
 Client_OBJECTS = \
-"CMakeFiles/Client.dir/main.cpp.o" \
-"CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o" \
+"CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o" \
+"CMakeFiles/Client.dir/main.cc.o" \
 "CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o" \
 "CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.o"
 
 # External object files for target Client
 Client_EXTERNAL_OBJECTS =
 
-client/Client: client/CMakeFiles/Client.dir/main.cpp.o
-client/Client: client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o
+client/Client: client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o
+client/Client: client/CMakeFiles/Client.dir/main.cc.o
 client/Client: client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 client/Client: client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.o
 client/Client: client/CMakeFiles/Client.dir/build.make
@@ -177,8 +177,8 @@ client/CMakeFiles/Client.dir/build: client/Client
 
 .PHONY : client/CMakeFiles/Client.dir/build
 
-client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/main.cpp.o.requires
-client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o.requires
+client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o.requires
+client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/main.cc.o.requires
 client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o.requires
 client/CMakeFiles/Client.dir/requires: client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.o.requires
 

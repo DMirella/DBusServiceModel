@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.o"
-  "/home/dima/work/DBusServiceModel/src/client/main.cpp" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/main.cpp.o"
+  "/home/dima/work/DBusServiceModel/src/client/main.cc" "/home/dima/work/DBusServiceModel/build/client/CMakeFiles/Client.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

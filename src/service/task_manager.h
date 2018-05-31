@@ -1,12 +1,12 @@
 #ifndef TASK_MANAGER_HPP_
 #define TASK_MANAGER_HPP_
 
-#include "Task.hpp"
-#include "SyncQueue.hpp"
-#include <iostream>
-#include <thread>
-#include <queue>
 #include <condition_variable>
+#include <iostream>
+#include <queue>
+#include <thread>
+#include "SyncQueue.hpp"
+#include "task.h"
 
 namespace{
 using TaskSharedPtr = std::shared_ptr<ServiceTask::Task>;

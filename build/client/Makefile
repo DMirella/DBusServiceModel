@@ -125,32 +125,32 @@ Client/fast:
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
-ClientCalculatorDBusService.o: ClientCalculatorDBusService.cpp.o
+client_calculator_dbus_service.o: client_calculator_dbus_service.cc.o
 
-.PHONY : ClientCalculatorDBusService.o
+.PHONY : client_calculator_dbus_service.o
 
 # target to build an object file
-ClientCalculatorDBusService.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.o
-.PHONY : ClientCalculatorDBusService.cpp.o
+client_calculator_dbus_service.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.o
+.PHONY : client_calculator_dbus_service.cc.o
 
-ClientCalculatorDBusService.i: ClientCalculatorDBusService.cpp.i
+client_calculator_dbus_service.i: client_calculator_dbus_service.cc.i
 
-.PHONY : ClientCalculatorDBusService.i
+.PHONY : client_calculator_dbus_service.i
 
 # target to preprocess a source file
-ClientCalculatorDBusService.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.i
-.PHONY : ClientCalculatorDBusService.cpp.i
+client_calculator_dbus_service.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.i
+.PHONY : client_calculator_dbus_service.cc.i
 
-ClientCalculatorDBusService.s: ClientCalculatorDBusService.cpp.s
+client_calculator_dbus_service.s: client_calculator_dbus_service.cc.s
 
-.PHONY : ClientCalculatorDBusService.s
+.PHONY : client_calculator_dbus_service.s
 
 # target to generate assembly for a file
-ClientCalculatorDBusService.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/ClientCalculatorDBusService.cpp.s
-.PHONY : ClientCalculatorDBusService.cpp.s
+client_calculator_dbus_service.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/client_calculator_dbus_service.cc.s
+.PHONY : client_calculator_dbus_service.cc.s
 
 home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o: home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 
@@ -206,32 +206,32 @@ home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/Calculat
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.s
 .PHONY : home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusProxy.cpp.s
 
-main.o: main.cpp.o
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.cpp.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f client/CMakeFiles/Client.dir/build.make client/CMakeFiles/Client.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -242,9 +242,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Client"
 	@echo "... edit_cache"
-	@echo "... ClientCalculatorDBusService.o"
-	@echo "... ClientCalculatorDBusService.i"
-	@echo "... ClientCalculatorDBusService.s"
+	@echo "... client_calculator_dbus_service.o"
+	@echo "... client_calculator_dbus_service.i"
+	@echo "... client_calculator_dbus_service.s"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.o"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.i"
 	@echo "... home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.s"

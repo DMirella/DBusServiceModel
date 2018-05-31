@@ -1,10 +1,10 @@
 /* This file dempnstrate API capabilities on client-side:
    in infinity cycle generate random operation then make request to service and use bit time for sleep */
-#include "ClientCalculatorDBusService.hpp"
+#include "client_calculator_dbus_service.h"
 #include <iostream>
 #include <ctime>
 
-/* On answer recieved functions */
+
 void onSumResultRecieved(const int& answer){
   std::cout << "Answer for sum: " << answer << std::endl;
 }
@@ -17,7 +17,6 @@ void onDivResultRecieved(const int& answer){
 void onDedResultRecieved(const int& answer){
   std::cout << "Answer for deduct: " << answer << std::endl;
 }
-/********************************/
 
 int main(){
   srand(time(0));
@@ -30,20 +29,20 @@ int main(){
     cnt++;
     switch(rand() % 4) {
     case 0:
-      service.getSumAsync(6, 2, onSumResultRecieved);
+      service.sumAsync(6, 2, onSumResultRecieved);
       break;
     case 1:
-      service.getDeductAsync(6, 2, onDedResultRecieved);
+      service.deductAsync(6, 2, onDedResultRecieved);
       break;
     case 2:
-      service.getMultiplyAsync(6, 2, onMulResultRecieved);
+      service.multiplyAsync(6, 2, onMulResultRecieved);
       break;
     case 3:
-      service.getDivideAsync(6, 2, onDivResultRecieved);
+      service.divideAsync(6, 2, onDivResultRecieved);
       break;
     }
     std::cout << "Service call #" << cnt << std::endl;
-    usleep(100000);  // sleep for 100 ms
+    usleep(100000);
   }
   return 0;
 }

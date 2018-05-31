@@ -1,5 +1,5 @@
-#include "CalculatorServiceStubImpl.hpp"
-#include "CalculatorServiceTasks.hpp"
+#include "calculator_service_stub_impl.h"
+#include "calculator_service_tasks.h"
 
 void CalculatorServiceStubImpl::sum(const std::shared_ptr<CommonAPI::ClientId> _client, 
     				    int32_t _valueA, int32_t _valueB, sumReply_t _reply) {

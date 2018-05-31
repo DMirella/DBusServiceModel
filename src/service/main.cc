@@ -1,6 +1,5 @@
 /* This file demonstrate the capabilities of API, which I had created. */
-#include "DBusCalculatorService.hpp"
-
+#include "dbus_calculator_service.h"
 
 int main() {
   std::shared_ptr<Service::Service> calculator_service 

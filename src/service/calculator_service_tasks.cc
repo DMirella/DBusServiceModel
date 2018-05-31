@@ -1,4 +1,4 @@
-#include "CalculatorServiceTasks.hpp"
+#include "calculator_service_tasks.h"
 
 void TaskSum::solve() {
 #ifdef TESTING_HARD_TASKS_MODEL

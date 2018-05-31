@@ -54,27 +54,31 @@ functional
 future
 -
 
-/home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.cpp
-ClientCalculatorDBusService.hpp
-/home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.hpp
+/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc
+chrono
+-
+iostream
+-
+client_calculator_dbus_service.h
+/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
 
-/home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.hpp
-unistd.h
--
-thread
--
+/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
 CommonAPI/CommonAPI.hpp
--
-string
 -
 functional
 -
-v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
+string
 -
+thread
+-
+unistd.h
+-
+v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
+/home/dima/work/DBusServiceModel/src/client/v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
 
-/home/dima/work/DBusServiceModel/src/client/main.cpp
-ClientCalculatorDBusService.hpp
-/home/dima/work/DBusServiceModel/src/client/ClientCalculatorDBusService.hpp
+/home/dima/work/DBusServiceModel/src/client/main.cc
+client_calculator_dbus_service.h
+/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
 iostream
 -
 ctime

@@ -1,9 +1,9 @@
 #ifndef CALCULATOR_SERVICE_TASKS_HPP_
 #define CALCULATOR_SERVICE_TASKS_HPP_
 
-#include "Task.hpp"
 #include <functional>
 #include <thread>
+#include "task.h"
 
 /*This defines helps to test the system if it 
   could solve a more time-consuming tasks.*/

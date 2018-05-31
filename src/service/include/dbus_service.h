@@ -1,10 +1,9 @@
 #ifndef DBUS_SERVICE_HPP_
 #define DBUS_SERVICE_HPP_
 
-#include "Service.hpp"
-
 #include <CommonAPI/CommonAPI.hpp>
 #include <thread>
+#include "service.h"
 
 namespace Service{
 namespace DBusService{
