@@ -34,6 +34,10 @@ class TaskSum : public ServiceTask::Task,
  public:
   TaskSum(const int value_a, const int value_b, const std::function<void(int32_t _result)>& reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
+  
+  TaskSum() 		       = delete;
+  TaskSum(const TaskSum& task) = delete;
+  TaskSum(TaskSum&& task)      = delete;
   virtual void Solve() override;
 };
 
@@ -43,6 +47,9 @@ class TaskDeduct : public ServiceTask::Task,
  public:
   TaskDeduct(const int value_a, const int value_b, const std::function<void(int32_t _result)>& reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
+  TaskDeduct() 		             = delete;
+  TaskDeduct(const TaskDeduct& task) = delete;
+  TaskDeduct(TaskDeduct&& task)      = delete;
   virtual void Solve() override;
 };
 
@@ -52,6 +59,9 @@ class TaskMultiply : public ServiceTask::Task,
  public:
   TaskMultiply(const int value_a, const int value_b, const std::function<void(int32_t _result)>& reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
+  TaskMultiply() 		         = delete;
+  TaskMultiply(const TaskMultiply& task) = delete;
+  TaskMultiply(TaskMultiply&& task)      = delete;
   virtual void Solve() override;
 };
 
@@ -61,6 +71,9 @@ class TaskDivide : public ServiceTask::Task,
  public:
   TaskDivide(const int value_a, const int value_b, const std::function<void(int32_t _result)>& reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
+  TaskDivide() 		             = delete;
+  TaskDivide(const TaskDivide& task) = delete;
+  TaskDivide(TaskDivide&& task)      = delete;
   virtual void Solve() override;
 };
 }  // namespace CalculatorServiceTask

@@ -15,6 +15,8 @@ namespace TaskConsumerProducerQueue {
 class TaskConsumerProducerQueue {
  public:
   TaskConsumerProducerQueue();
+  TaskConsumerProducerQueue(const TaskConsumerProducerQueue& task_consumer_producer_queue) = delete;
+  TaskConsumerProducerQueue(TaskConsumerProducerQueue&& task_consumer_producer_queue)      = delete;
   ~TaskConsumerProducerQueue();
 
   void addTaskToQueue(const TaskSharedPtr& task);

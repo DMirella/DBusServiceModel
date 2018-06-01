@@ -17,6 +17,10 @@ class DBusCalculatorService {
  public:
   explicit DBusCalculatorService(const std::string& name);
   ~DBusCalculatorService();
+  
+  DBusCalculatorService() = delete;
+  DBusCalculatorService(const DBusCalculatorService& service) = delete;
+  DBusCalculatorService(DBusCalculatorService&& service) = delete;
   void startService();
  private:
   std::string name_;

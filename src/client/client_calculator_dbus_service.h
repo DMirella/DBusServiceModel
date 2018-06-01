@@ -19,6 +19,9 @@ namespace ClientCalculatorDBusService {
 class ClientCalculatorDBusService {
  public:
   explicit ClientCalculatorDBusService(const std::string& service_name);
+  ClientCalculatorDBusService() = delete;
+  ClientCalculatorDBusService(const ClientCalculatorDBusService& service) = delete;
+  ClientCalculatorDBusService(ClientCalculatorDBusService&& service) = delete;
 
   void makeConnection();
   void sumAsync(const int value_a, const int value_b, 

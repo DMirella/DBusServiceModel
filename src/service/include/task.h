@@ -4,6 +4,7 @@
 namespace ServiceTask {
 class Task {
  public:
+  virtual ~Task() {}
   //In this function you must write your solve task logic
   virtual void Solve() = 0;
 };
