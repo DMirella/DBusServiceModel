@@ -1,5 +1,5 @@
-#ifndef CALCULATOR_SERVICE_STUB_IMPL_HPP_
-#define CALCULATOR_SERVICE_STUB_IMPL_HPP_
+#ifndef DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_
+#define DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_
 
 #include "task_manager.h"
 #include "v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp"
@@ -19,7 +19,7 @@ class CalculatorServiceStubImpl
   virtual void divide(const std::shared_ptr<CommonAPI::ClientId> _client, 
       		      int32_t _valueA, int32_t _valueB, divideReply_t _reply) override;
  private:
-  TaskManager task_manager_;
+  TaskConsumerProducerQueue task_manager_;
 };
 
-#endif  // CALCULATOR_SERVICE_STUB_IMPL_HPP_
+#endif  // DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_

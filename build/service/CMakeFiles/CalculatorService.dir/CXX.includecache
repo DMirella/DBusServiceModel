@@ -79,6 +79,8 @@ v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 /home/dima/work/DBusServiceModel/src/service/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 
 /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.cc
+iostream
+-
 calculator_service_tasks.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
 
@@ -91,54 +93,46 @@ task.h
 /home/dima/work/DBusServiceModel/src/service/task.h
 
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.cc
-dbus_calculator_service.h
-/home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 iostream
 -
+dbus_calculator_service.h
+/home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
-dbus_service.h
-/home/dima/work/DBusServiceModel/src/service/dbus_service.h
-calculator_service_stub_impl.h
-/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
-
-/home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
+CommonAPI/CommonAPI.hpp
+-
 memory
 -
-mutex
--
-queue
--
-
-/home/dima/work/DBusServiceModel/src/service/include/dbus_service.h
-CommonAPI/CommonAPI.hpp
+string
 -
 thread
 -
-service.h
-/home/dima/work/DBusServiceModel/src/service/include/service.h
-
-/home/dima/work/DBusServiceModel/src/service/include/service.h
-iostream
--
+calculator_service_stub_impl.h
+/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 
 /home/dima/work/DBusServiceModel/src/service/include/task.h
 
 /home/dima/work/DBusServiceModel/src/service/main.cc
 dbus_calculator_service.h
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
+iostream
+-
+unistd.h
+-
+
+/home/dima/work/DBusServiceModel/src/service/task_manager.cc
+iostream
+-
+task_manager.h
+/home/dima/work/DBusServiceModel/src/service/task_manager.h
 
 /home/dima/work/DBusServiceModel/src/service/task_manager.h
 condition_variable
--
-iostream
 -
 queue
 -
 thread
 -
-SyncQueue.hpp
-/home/dima/work/DBusServiceModel/src/service/SyncQueue.hpp
 task.h
 /home/dima/work/DBusServiceModel/src/service/task.h
 

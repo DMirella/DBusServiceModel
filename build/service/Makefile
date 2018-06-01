@@ -314,6 +314,33 @@ main.cc.s:
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.s
 .PHONY : main.cc.s
 
+task_manager.o: task_manager.cc.o
+
+.PHONY : task_manager.o
+
+# target to build an object file
+task_manager.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.o
+.PHONY : task_manager.cc.o
+
+task_manager.i: task_manager.cc.i
+
+.PHONY : task_manager.i
+
+# target to preprocess a source file
+task_manager.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.i
+.PHONY : task_manager.cc.i
+
+task_manager.s: task_manager.cc.s
+
+.PHONY : task_manager.s
+
+# target to generate assembly for a file
+task_manager.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.s
+.PHONY : task_manager.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -344,6 +371,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... task_manager.o"
+	@echo "... task_manager.i"
+	@echo "... task_manager.s"
 .PHONY : help
 
 

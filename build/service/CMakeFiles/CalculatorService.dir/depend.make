@@ -7,7 +7,6 @@ service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /hom
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.cc
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
-service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/include/task.h
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.h
 service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
@@ -29,9 +28,6 @@ service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dim
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.cc
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
-service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
-service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/include/dbus_service.h
-service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/include/service.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/include/task.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
@@ -142,9 +138,6 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceM
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/include/dbus_service.h
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/include/service.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/include/task.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/main.cc
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.h
@@ -164,4 +157,8 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
+
+service/CMakeFiles/CalculatorService.dir/task_manager.cc.o: /home/dima/work/DBusServiceModel/src/service/include/task.h
+service/CMakeFiles/CalculatorService.dir/task_manager.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.cc
+service/CMakeFiles/CalculatorService.dir/task_manager.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.h
 

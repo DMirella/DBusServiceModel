@@ -1,19 +1,27 @@
-#ifndef DBUS_CALCULATOR_SERVICE_HPP_
-#define DBUS_CALCULATOR_SERVICE_HPP_
+#ifndef DBUSSERVICEMODEL_SRC_SERVICE_DBUS_CALCULATOR_SERVICE_H_
+#define DBUSSERVICEMODEL_SRC_SERVICE_DBUS_CALCULATOR_SERVICE_H_
 
-#include "dbus_service.h"
+#include <CommonAPI/CommonAPI.hpp>
+#include <memory>
+#include <string>
+#include <thread>
 #include "calculator_service_stub_impl.h"
 
-class DBusCalculatorService 
-    : public Service::DBusService::DBusService<CalculatorServiceStubImpl> {
+namespace {
+const int _5sec = 5;
+constexpr int kDefualtSleepSeconds = _5sec;
+}
+
+class DBusCalculatorService {
  public:
-  explicit DBusCalculatorService(std::string name) 
-    : DBusService(std::move(name), std::make_shared<CalculatorServiceStubImpl>()) {
-  }
- protected:
-  virtual void doServiceThread() override;
+  explicit DBusCalculatorService(const std::string& name);
+  ~DBusCalculatorService();
+  void startService();
  private:
-  const static size_t kDefualtSleepSeconds;
+  std::string name_;
+  std::shared_ptr<CalculatorServiceStubImpl> service_;
+  std::shared_ptr<CommonAPI::Runtime> runtime_;  
+  std::thread service_thread_;
 };
 
-#endif  // DBUS_CALCULATOR_SERVICE_HPP_
+#endif  // DBUSSERVICEMODEL_SRC_SERVICE_DBUS_CALCULATOR_SERVICE_H_

@@ -8,7 +8,6 @@ service/CMakeFiles/CalculatorService.dir/calculator_service_stub_impl.cc.o
  /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.cc
  /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
  /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
- /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
  /home/dima/work/DBusServiceModel/src/service/include/task.h
  /home/dima/work/DBusServiceModel/src/service/task_manager.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
@@ -30,9 +29,6 @@ service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o
  /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
  /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.cc
  /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
- /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
- /home/dima/work/DBusServiceModel/src/service/include/dbus_service.h
- /home/dima/work/DBusServiceModel/src/service/include/service.h
  /home/dima/work/DBusServiceModel/src/service/include/task.h
  /home/dima/work/DBusServiceModel/src/service/task_manager.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
@@ -143,9 +139,6 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o
  /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
  /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
  /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
- /home/dima/work/DBusServiceModel/src/service/include/SyncQueue.hpp
- /home/dima/work/DBusServiceModel/src/service/include/dbus_service.h
- /home/dima/work/DBusServiceModel/src/service/include/service.h
  /home/dima/work/DBusServiceModel/src/service/include/task.h
  /home/dima/work/DBusServiceModel/src/service/main.cc
  /home/dima/work/DBusServiceModel/src/service/task_manager.h
@@ -165,3 +158,7 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
+service/CMakeFiles/CalculatorService.dir/task_manager.cc.o
+ /home/dima/work/DBusServiceModel/src/service/include/task.h
+ /home/dima/work/DBusServiceModel/src/service/task_manager.cc
+ /home/dima/work/DBusServiceModel/src/service/task_manager.h

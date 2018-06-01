@@ -1,5 +1,5 @@
-#ifndef CALCULATOR_SERVICE_TASKS_HPP_
-#define CALCULATOR_SERVICE_TASKS_HPP_
+#ifndef DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_TASKS_H_
+#define DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_TASKS_H_
 
 #include <functional>
 #include <thread>
@@ -11,31 +11,29 @@
 #define TESTING_HARD_TASKS_MODEL
 
 namespace{
-using VoidFuncWithIntParam = std::function<void (int32_t _result)>;
-/* I thought that it was a good solution to avoid tautology declaring classes with similar data */
+const int kInfinity = 2010101010;
+
 class TaskWithTwoIntParams {
  public:
-  TaskWithTwoIntParams(int value_a, int value_b) 
+  TaskWithTwoIntParams(const int value_a, const int value_b) 
     : value_a_(value_a), value_b_(value_b) {}
  protected:
   int value_a_, value_b_;
 };
 class TaskWithIntReply {
  public:
-  explicit TaskWithIntReply(VoidFuncWithIntParam reply) { reply_ = reply; }
+  explicit TaskWithIntReply(std::function<void(int32_t _result)> reply) { reply_ = reply; }
  protected:
-  VoidFuncWithIntParam reply_;
+  std::function<void(int32_t _result)> reply_;
 };
-/************************************************************************************************/
-} // namespace
+}  // namespace
 
-/* The tasks do the elementary operations(+, -, *, /) with value_a_ and value_b_ 
- * and return the result by calling the reply_-function 		      */
+
 class TaskSum : public ServiceTask::Task, 
                 public TaskWithIntReply,  
                 public TaskWithTwoIntParams {
  public:
-  TaskSum(int value_a, int value_b, VoidFuncWithIntParam reply) 
+  TaskSum(const int value_a, const int value_b, std::function<void(int32_t _result)> reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
@@ -44,7 +42,7 @@ class TaskDeduct : public ServiceTask::Task,
                    public TaskWithIntReply, 
                    public TaskWithTwoIntParams {
  public:
-  TaskDeduct(int value_a, int value_b, VoidFuncWithIntParam reply) 
+  TaskDeduct(const int value_a, const int value_b, std::function<void(int32_t _result)> reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
@@ -53,7 +51,7 @@ class TaskMultiply : public ServiceTask::Task,
                      public TaskWithIntReply, 
                      public TaskWithTwoIntParams {
  public:
-  TaskMultiply(int value_a, int value_b, VoidFuncWithIntParam reply) 
+  TaskMultiply(const int value_a, const int value_b, std::function<void(int32_t _result)> reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
 };
@@ -62,11 +60,9 @@ class TaskDivide : public ServiceTask::Task,
 		   public TaskWithIntReply, 
 		   public TaskWithTwoIntParams {
  public:
-  TaskDivide(int value_a, int value_b, VoidFuncWithIntParam reply) 
+  TaskDivide(const int value_a, const int value_b, std::function<void(int32_t _result)> reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
   virtual void solve() override;
- private:
-  constexpr static int kInfinity = (1ll << 31) - 1;  // for x/0 case, local infinity
 };
 
-#endif  // CALCULATOR_SERVICE_TASKS_HPP_
+#endif  // DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_TASKS_H_
