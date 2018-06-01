@@ -73,12 +73,12 @@ calculator_service_tasks.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
 
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
-CommonAPI/CommonAPI.hpp
--
 memory
 -
-task_consumer_producer_queue.h
-/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
+CommonAPI/CommonAPI.hpp
+/home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
+task_synchronical_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 /home/dima/work/DBusServiceModel/src/service/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 
@@ -105,18 +105,22 @@ dbus_calculator_service.h
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
-CommonAPI/CommonAPI.hpp
--
 memory
 -
 string
 -
 thread
 -
+list
+-
 calculator_service_stub_impl.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
-
-/home/dima/work/DBusServiceModel/src/service/include/task.h
+CommonAPI/CommonAPI.hpp
+/home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
+task_solver.h
+/home/dima/work/DBusServiceModel/src/service/task_solver.h
+task_synchronical_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
 /home/dima/work/DBusServiceModel/src/service/main.cc
 iostream
@@ -126,13 +130,29 @@ unistd.h
 dbus_calculator_service.h
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 
-/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc
+/home/dima/work/DBusServiceModel/src/service/task.h
+
+/home/dima/work/DBusServiceModel/src/service/task_solver.cc
+task_solver.h
+/home/dima/work/DBusServiceModel/src/service/task_solver.h
 iostream
 -
-task_consumer_producer_queue.h
-/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
 
-/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_solver.h
+memory
+-
+thread
+-
+task_synchronical_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
+
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.cc
+task_synchronical_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
+iostream
+-
+
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 condition_variable
 -
 mutex

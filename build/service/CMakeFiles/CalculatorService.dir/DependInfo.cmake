@@ -11,13 +11,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
   "/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
   "/home/dima/work/DBusServiceModel/src/service/main.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/main.cc.o"
-  "/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o"
+  "/home/dima/work/DBusServiceModel/src/service/task_solver.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/task_solver.cc.o"
+  "/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.cc" "/home/dima/work/DBusServiceModel/build/service/CMakeFiles/CalculatorService.dir/task_synchronical_queue.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dima/work/DBusServiceModel/src/service/include"
   "/home/dima/work/DBusServiceModel/src-gen"
   "/home/dima/work/capicxx-core-runtime/include"
   "/home/dima/work/capicxx-dbus-runtime/include"

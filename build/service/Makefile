@@ -314,32 +314,59 @@ main.cc.s:
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.s
 .PHONY : main.cc.s
 
-task_consumer_producer_queue.o: task_consumer_producer_queue.cc.o
+task_solver.o: task_solver.cc.o
 
-.PHONY : task_consumer_producer_queue.o
+.PHONY : task_solver.o
 
 # target to build an object file
-task_consumer_producer_queue.cc.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o
-.PHONY : task_consumer_producer_queue.cc.o
+task_solver.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_solver.cc.o
+.PHONY : task_solver.cc.o
 
-task_consumer_producer_queue.i: task_consumer_producer_queue.cc.i
+task_solver.i: task_solver.cc.i
 
-.PHONY : task_consumer_producer_queue.i
+.PHONY : task_solver.i
 
 # target to preprocess a source file
-task_consumer_producer_queue.cc.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.i
-.PHONY : task_consumer_producer_queue.cc.i
+task_solver.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_solver.cc.i
+.PHONY : task_solver.cc.i
 
-task_consumer_producer_queue.s: task_consumer_producer_queue.cc.s
+task_solver.s: task_solver.cc.s
 
-.PHONY : task_consumer_producer_queue.s
+.PHONY : task_solver.s
 
 # target to generate assembly for a file
-task_consumer_producer_queue.cc.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.s
-.PHONY : task_consumer_producer_queue.cc.s
+task_solver.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_solver.cc.s
+.PHONY : task_solver.cc.s
+
+task_synchronical_queue.o: task_synchronical_queue.cc.o
+
+.PHONY : task_synchronical_queue.o
+
+# target to build an object file
+task_synchronical_queue.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_synchronical_queue.cc.o
+.PHONY : task_synchronical_queue.cc.o
+
+task_synchronical_queue.i: task_synchronical_queue.cc.i
+
+.PHONY : task_synchronical_queue.i
+
+# target to preprocess a source file
+task_synchronical_queue.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_synchronical_queue.cc.i
+.PHONY : task_synchronical_queue.cc.i
+
+task_synchronical_queue.s: task_synchronical_queue.cc.s
+
+.PHONY : task_synchronical_queue.s
+
+# target to generate assembly for a file
+task_synchronical_queue.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_synchronical_queue.cc.s
+.PHONY : task_synchronical_queue.cc.s
 
 # Help Target
 help:
@@ -371,9 +398,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... task_consumer_producer_queue.o"
-	@echo "... task_consumer_producer_queue.i"
-	@echo "... task_consumer_producer_queue.s"
+	@echo "... task_solver.o"
+	@echo "... task_solver.i"
+	@echo "... task_solver.s"
+	@echo "... task_synchronical_queue.o"
+	@echo "... task_synchronical_queue.i"
+	@echo "... task_synchronical_queue.s"
 .PHONY : help
 
 

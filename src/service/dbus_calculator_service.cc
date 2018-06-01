@@ -1,34 +1,38 @@
 #include <iostream>
 #include "dbus_calculator_service.h"
 
-DBusCalculatorService::DBusCalculatorService::DBusCalculatorService(const std::string& name)
+
+namespace {
+const int _5sec = 5;
+const int kDefualtSleepSeconds = _5sec;
+const int kTaskSolverCount = 1;
+}
+
+namespace DBusServiceModel {
+DBusCalculatorService::DBusCalculatorService(const std::string& name)
   : name_(name) {
   runtime_ = CommonAPI::Runtime::get();
   if (runtime_ == nullptr) {
     std::cerr << "Error in DBusCalculatorService::DBusCalculatorService(): runtime_ == nullptr\n";
     return;
   }
-  service_ = std::make_shared<CalculatorServiceStubImpl::CalculatorServiceStubImpl>();
+  task_synchronical_queue_ = std::make_shared<TaskSynchronicalQueue>();
+  service_ = std::make_shared<CalculatorServiceStubImpl>(task_synchronical_queue_);
 }
 
-DBusCalculatorService::DBusCalculatorService::~DBusCalculatorService() {
-  
+DBusCalculatorService::~DBusCalculatorService() {
+  task_synchronical_queue_.reset();
 }
 
-void DBusCalculatorService::DBusCalculatorService::startService() {
+void DBusCalculatorService::StartService() {
   if (runtime_ == nullptr) {
     std::cerr << "Error in DBusCalculatorService::startService(): runtime_ == nullptr\n";
     return;
   }
   runtime_->registerService("", name_, service_);
-  auto doServiceThreadFunc = []() {
-  			       std::cout << "Calculator service was started. Wait for clients...\n";
-  			       while (true) { 
-    			         std::this_thread::sleep_for(std::chrono::seconds(kDefualtSleepSeconds));
-			       }
-                             };
-  service_thread_ = std::thread(doServiceThreadFunc);
-  if (service_thread_.joinable()) {
-    service_thread_.join();
-  }
 }
+
+void DBusCalculatorService::AddTaskSolver() {
+  task_solvers_.push_back(std::make_unique<TaskSolver>(task_synchronical_queue_));
+}
+}  // namespace DBusServiceModel

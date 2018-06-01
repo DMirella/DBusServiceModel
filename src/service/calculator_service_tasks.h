@@ -26,9 +26,8 @@ class TaskWithIntReply {
 };
 }  // namespace
 
-namespace CalculatorServiceTask {
-
-class TaskSum : public ServiceTask::Task, 
+namespace DBusServiceModel {
+class TaskSum : public Task, 
                 public TaskWithIntReply,  
                 public TaskWithTwoIntParams {
  public:
@@ -41,7 +40,7 @@ class TaskSum : public ServiceTask::Task,
   virtual void Solve() override;
 };
 
-class TaskDeduct : public ServiceTask::Task, 
+class TaskDeduct : public Task, 
                    public TaskWithIntReply, 
                    public TaskWithTwoIntParams {
  public:
@@ -53,7 +52,7 @@ class TaskDeduct : public ServiceTask::Task,
   virtual void Solve() override;
 };
 
-class TaskMultiply : public ServiceTask::Task, 
+class TaskMultiply : public Task, 
                      public TaskWithIntReply, 
                      public TaskWithTwoIntParams {
  public:
@@ -65,7 +64,7 @@ class TaskMultiply : public ServiceTask::Task,
   virtual void Solve() override;
 };
 
-class TaskDivide : public ServiceTask::Task, 
+class TaskDivide : public Task, 
 		   public TaskWithIntReply, 
 		   public TaskWithTwoIntParams {
  public:
@@ -76,6 +75,6 @@ class TaskDivide : public ServiceTask::Task,
   TaskDivide(TaskDivide&& task)      = delete;
   virtual void Solve() override;
 };
-}  // namespace CalculatorServiceTask
+}  // namespace DBusServiceModel
 
 #endif  // DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_TASKS_H_

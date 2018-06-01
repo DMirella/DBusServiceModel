@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dima/work/DBusServiceModel/src/service/include -I/home/dima/work/DBusServiceModel/src-gen -I/home/dima/work/capicxx-core-runtime/include -I/home/dima/work/capicxx-dbus-runtime/include -I/home/dima/work/dbus-1.10.10 
+CXX_INCLUDES = -I/home/dima/work/DBusServiceModel/src-gen -I/home/dima/work/capicxx-core-runtime/include -I/home/dima/work/capicxx-dbus-runtime/include -I/home/dima/work/dbus-1.10.10 
 

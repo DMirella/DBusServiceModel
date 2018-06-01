@@ -3,28 +3,29 @@
 #include <thread>
 #include "calculator_service_tasks.h"
 
-void CalculatorServiceTask::TaskSum::Solve() {
+namespace DBusServiceModel {
+void TaskSum::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ + value_b_);
 }
 
-void CalculatorServiceTask::TaskDeduct::Solve() {
+void TaskDeduct::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ - value_b_);
 }
 
-void CalculatorServiceTask::TaskMultiply::Solve() {
+void TaskMultiply::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ * value_b_);
 }
 
-void CalculatorServiceTask::TaskDivide::Solve() {
+void TaskDivide::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
@@ -34,3 +35,4 @@ void CalculatorServiceTask::TaskDivide::Solve() {
   }
   reply_(value_a_ / value_b_);
 }
+}  // namespace DBusServiceModel
