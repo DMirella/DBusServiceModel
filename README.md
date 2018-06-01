@@ -1,5 +1,5 @@
 # DBusServiceModel
-No actualy now.
+Not actualy now.
 =====================================================
 
 
