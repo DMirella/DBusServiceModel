@@ -1,8 +1,9 @@
 #include <chrono>
 #include <iostream>
+#include <thread>
 #include "client_calculator_dbus_service.h"
 
-ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& service_name) 
+ClientCalculatorDBusService::ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& service_name) 
     : service_name_(service_name) {
   runtime_ = CommonAPI::Runtime::get();
   if (runtime_ == nullptr) {
@@ -14,13 +15,13 @@ ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& serv
   ++last_reg_id_;
 }
 
-void ClientCalculatorDBusService::makeConnection() {
+void ClientCalculatorDBusService::ClientCalculatorDBusService::makeConnection() {
   while (!service_proxy_->isAvailable()) {
     std::this_thread::sleep_for(std::chrono::seconds(_5sec));
   }
 }
 
-void ClientCalculatorDBusService::sumAsync(const int value_a, const int value_b, 
+void ClientCalculatorDBusService::ClientCalculatorDBusService::sumAsync(const int value_a, const int value_b, 
      					      std::function<void(int)> on_answer_function) const {
   service_proxy_->sumAsync(value_a, value_b, 
     			  [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
@@ -28,7 +29,7 @@ void ClientCalculatorDBusService::sumAsync(const int value_a, const int value_b,
   			  }, &callinfo);
 }
 
-void ClientCalculatorDBusService::divideAsync(const int value_a, const int value_b, 
+void ClientCalculatorDBusService::ClientCalculatorDBusService::divideAsync(const int value_a, const int value_b, 
       						 std::function<void(int)> on_answer_function) const {
   service_proxy_->divideAsync(value_a, value_b, 
   			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
@@ -36,7 +37,7 @@ void ClientCalculatorDBusService::divideAsync(const int value_a, const int value
   			     }, &callinfo);
 }
 
-void ClientCalculatorDBusService::deductAsync(const int value_a, const int value_b, 
+void ClientCalculatorDBusService::ClientCalculatorDBusService::deductAsync(const int value_a, const int value_b, 
      						 std::function<void(int)> on_answer_function) const {
   service_proxy_->deductAsync(value_a, value_b, 
   			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
@@ -44,7 +45,7 @@ void ClientCalculatorDBusService::deductAsync(const int value_a, const int value
   		 	     }, &callinfo);
 }
   
-void ClientCalculatorDBusService::multiplyAsync(const int value_a, const int value_b, 
+void ClientCalculatorDBusService::ClientCalculatorDBusService::multiplyAsync(const int value_a, const int value_b, 
      						   std::function<void(int)> on_answer_function) const {
   service_proxy_->multiplyAsync(value_a, value_b, 
   			       [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {

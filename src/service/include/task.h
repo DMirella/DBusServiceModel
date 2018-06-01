@@ -1,11 +1,12 @@
-#ifndef TASK_HPP_
-#define TASK_HPP_
+#ifndef DBUSSERVICEMODEL_SRC_SERVICE_INCLUDE_TASK_H_
+#define DBUSSERVICEMODEL_SRC_SERVICE_INCLUDE_TASK_H_
 
 namespace ServiceTask {
 class Task {
  public:
-  virtual void solve() = 0;
+  //In this function you must write your solve task logic
+  virtual void Solve() = 0;
 };
 }  // namespace ServiceTask
 
-#endif  // TASK_HPP_
+#endif  // DBUSSERVICEMODEL_SRC_SERVICE_INCLUDE_TASK_H_

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 project(CalculatorService)
 
-set(CALCULATOR_SERVICE_SRCGEN ~/work/DBusServiceModel/src-gen)
-set(SRCGEN_V1_COM_LUXOFT_PATH ${CALCULATOR_SERVICE_SRCGEN}/v1/com/luxoft/calculatorservice)
+set(CALCULATOR_SERVICE_SRCGEN      ~/work/DBusServiceModel/src-gen)
+set(SRCGEN_V1_COM_LUXOFT_PATH      ${CALCULATOR_SERVICE_SRCGEN}/v1/com/luxoft/calculatorservice)
 set(CALCULATOR_SERVICE_SRCGEN_CCPS ${SRCGEN_V1_COM_LUXOFT_PATH}/CalculatorServiceDBusDeployment.cpp
 				   ${SRCGEN_V1_COM_LUXOFT_PATH}/CalculatorServiceDBusStubAdapter.cpp
 				   ${SRCGEN_V1_COM_LUXOFT_PATH}/CalculatorServiceStubDefault.cpp)

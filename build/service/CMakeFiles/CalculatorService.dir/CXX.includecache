@@ -73,8 +73,12 @@ calculator_service_tasks.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
 
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
-task_manager.h
-/home/dima/work/DBusServiceModel/src/service/task_manager.h
+CommonAPI/CommonAPI.hpp
+-
+memory
+-
+task_consumer_producer_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 /home/dima/work/DBusServiceModel/src/service/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 
@@ -113,21 +117,23 @@ calculator_service_stub_impl.h
 /home/dima/work/DBusServiceModel/src/service/include/task.h
 
 /home/dima/work/DBusServiceModel/src/service/main.cc
-dbus_calculator_service.h
-/home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 iostream
 -
 unistd.h
 -
+dbus_calculator_service.h
+/home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 
-/home/dima/work/DBusServiceModel/src/service/task_manager.cc
+/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc
 iostream
 -
-task_manager.h
-/home/dima/work/DBusServiceModel/src/service/task_manager.h
+task_consumer_producer_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
 
-/home/dima/work/DBusServiceModel/src/service/task_manager.h
+/home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.h
 condition_variable
+-
+mutex
 -
 queue
 -

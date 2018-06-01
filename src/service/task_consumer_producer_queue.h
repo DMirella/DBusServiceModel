@@ -2,6 +2,7 @@
 #define DBUSSERVICEMODEL_SRC_SERVICE_TASK_CONSUMER_PRODUCER_QUEUE_H_
 
 #include <condition_variable>
+#include <mutex>
 #include <queue>
 #include <thread>
 #include "task.h"
@@ -10,13 +11,13 @@ namespace{
 using TaskSharedPtr = std::shared_ptr<ServiceTask::Task>;
 }  // namespace
 
+namespace TaskConsumerProducerQueue {
 class TaskConsumerProducerQueue {
  public:
   TaskConsumerProducerQueue();
   ~TaskConsumerProducerQueue();
 
-  void addTaskToQueue(TaskSharedPtr task);
-
+  void addTaskToQueue(const TaskSharedPtr& task);
  private:
   void solveThreadLogic();
   void destroySolverThread();
@@ -29,5 +30,6 @@ class TaskConsumerProducerQueue {
   bool solver_thread_destroy_;
   bool is_need_to_destroy_solver_thread_;
 };
+}  // namespace TaskConsumerProducerQueue
 
 #endif  // DBUSSERVICEMODEL_SRC_SERVICE_TASK_CONSUMER_PRODUCER_QUEUE_H_

@@ -12,6 +12,7 @@ const int _5sec = 5;
 constexpr int kDefualtSleepSeconds = _5sec;
 }
 
+namespace DBusCalculatorService {
 class DBusCalculatorService {
  public:
   explicit DBusCalculatorService(const std::string& name);
@@ -19,9 +20,10 @@ class DBusCalculatorService {
   void startService();
  private:
   std::string name_;
-  std::shared_ptr<CalculatorServiceStubImpl> service_;
+  std::shared_ptr<CalculatorServiceStubImpl::CalculatorServiceStubImpl> service_;
   std::shared_ptr<CommonAPI::Runtime> runtime_;  
   std::thread service_thread_;
 };
+}  // namespace DBusCalculatorService
 
 #endif  // DBUSSERVICEMODEL_SRC_SERVICE_DBUS_CALCULATOR_SERVICE_H_

@@ -1,28 +1,28 @@
 #include <iostream>
 #include "calculator_service_tasks.h"
 
-void TaskSum::solve() {
+void CalculatorServiceTask::TaskSum::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ + value_b_);
 }
 
-void TaskDeduct::solve() {
+void CalculatorServiceTask::TaskDeduct::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ - value_b_);
 }
 
-void TaskMultiply::solve() {
+void CalculatorServiceTask::TaskMultiply::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif
   reply_(value_a_ * value_b_);
 }
 
-void TaskDivide::solve() {
+void CalculatorServiceTask::TaskDivide::Solve() {
 #ifdef TESTING_HARD_TASKS_MODEL
   std::this_thread::sleep_for(std::chrono::milliseconds(HARD_TASK_TIME));
 #endif

@@ -3,9 +3,8 @@
 
 #include <CommonAPI/CommonAPI.hpp>
 #include <functional>
+#include <memory>
 #include <string>
-#include <thread>
-#include <unistd.h>
 #include "v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp"
 
 namespace {
@@ -16,6 +15,7 @@ int64_t last_reg_id_ = 0;
 const CommonAPI::CallInfo callinfo(kDefualtTimeoutTime);
 }
 
+namespace ClientCalculatorDBusService {
 class ClientCalculatorDBusService {
  public:
   explicit ClientCalculatorDBusService(const std::string& service_name);
@@ -34,6 +34,7 @@ class ClientCalculatorDBusService {
   std::shared_ptr<CommonAPI::Runtime> runtime_;
   std::shared_ptr<v1::com::luxoft::calculatorservice::CalculatorServiceProxy<>> service_proxy_;
 };
+}  // namespace ClientCalculatorDBusService
 
  
 

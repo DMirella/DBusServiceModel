@@ -153,28 +153,28 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o.provides: service/CMakeFiles/
 service/CMakeFiles/CalculatorService.dir/main.cc.o.provides.build: service/CMakeFiles/CalculatorService.dir/main.cc.o
 
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.o: service/CMakeFiles/CalculatorService.dir/flags.make
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.o: /home/dima/work/DBusServiceModel/src/service/task_manager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object service/CMakeFiles/CalculatorService.dir/task_manager.cc.o"
-	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/task_manager.cc.o -c /home/dima/work/DBusServiceModel/src/service/task_manager.cc
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o: service/CMakeFiles/CalculatorService.dir/flags.make
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o: /home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dima/work/DBusServiceModel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o"
+	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o -c /home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalculatorService.dir/task_manager.cc.i"
-	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/service/task_manager.cc > CMakeFiles/CalculatorService.dir/task_manager.cc.i
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.i"
+	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc > CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.i
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalculatorService.dir/task_manager.cc.s"
-	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/service/task_manager.cc -o CMakeFiles/CalculatorService.dir/task_manager.cc.s
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.s"
+	cd /home/dima/work/DBusServiceModel/build/service && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dima/work/DBusServiceModel/src/service/task_consumer_producer_queue.cc -o CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.s
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.requires:
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.requires:
 
-.PHONY : service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.requires
+.PHONY : service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.requires
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.provides: service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.requires
-	$(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.provides.build
-.PHONY : service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.provides
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.provides: service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.requires
+	$(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.provides.build
+.PHONY : service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.provides
 
-service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.provides.build: service/CMakeFiles/CalculatorService.dir/task_manager.cc.o
+service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.provides.build: service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o
 
 
 service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o: service/CMakeFiles/CalculatorService.dir/flags.make
@@ -255,7 +255,7 @@ CalculatorService_OBJECTS = \
 "CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o" \
 "CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o" \
 "CMakeFiles/CalculatorService.dir/main.cc.o" \
-"CMakeFiles/CalculatorService.dir/task_manager.cc.o" \
+"CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o" \
 "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"
@@ -267,7 +267,7 @@ service/CalculatorService: service/CMakeFiles/CalculatorService.dir/calculator_s
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/main.cc.o
-service/CalculatorService: service/CMakeFiles/CalculatorService.dir/task_manager.cc.o
+service/CalculatorService: service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o
 service/CalculatorService: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o
@@ -285,7 +285,7 @@ service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/Calculator
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o.requires
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o.requires
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/main.cc.o.requires
-service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/task_manager.cc.o.requires
+service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o.requires
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o.requires
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o.requires
 service/CMakeFiles/CalculatorService.dir/requires: service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o.requires

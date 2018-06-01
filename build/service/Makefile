@@ -314,32 +314,32 @@ main.cc.s:
 	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/main.cc.s
 .PHONY : main.cc.s
 
-task_manager.o: task_manager.cc.o
+task_consumer_producer_queue.o: task_consumer_producer_queue.cc.o
 
-.PHONY : task_manager.o
+.PHONY : task_consumer_producer_queue.o
 
 # target to build an object file
-task_manager.cc.o:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.o
-.PHONY : task_manager.cc.o
+task_consumer_producer_queue.cc.o:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o
+.PHONY : task_consumer_producer_queue.cc.o
 
-task_manager.i: task_manager.cc.i
+task_consumer_producer_queue.i: task_consumer_producer_queue.cc.i
 
-.PHONY : task_manager.i
+.PHONY : task_consumer_producer_queue.i
 
 # target to preprocess a source file
-task_manager.cc.i:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.i
-.PHONY : task_manager.cc.i
+task_consumer_producer_queue.cc.i:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.i
+.PHONY : task_consumer_producer_queue.cc.i
 
-task_manager.s: task_manager.cc.s
+task_consumer_producer_queue.s: task_consumer_producer_queue.cc.s
 
-.PHONY : task_manager.s
+.PHONY : task_consumer_producer_queue.s
 
 # target to generate assembly for a file
-task_manager.cc.s:
-	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_manager.cc.s
-.PHONY : task_manager.cc.s
+task_consumer_producer_queue.cc.s:
+	cd /home/dima/work/DBusServiceModel/build && $(MAKE) -f service/CMakeFiles/CalculatorService.dir/build.make service/CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.s
+.PHONY : task_consumer_producer_queue.cc.s
 
 # Help Target
 help:
@@ -371,9 +371,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... task_manager.o"
-	@echo "... task_manager.i"
-	@echo "... task_manager.s"
+	@echo "... task_consumer_producer_queue.o"
+	@echo "... task_consumer_producer_queue.i"
+	@echo "... task_consumer_producer_queue.s"
 .PHONY : help
 
 

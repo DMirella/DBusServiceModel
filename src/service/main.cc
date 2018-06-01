@@ -1,14 +1,10 @@
-#include "dbus_calculator_service.h"
 #include <iostream>
 #include <unistd.h>
+#include "dbus_calculator_service.h"
 
 int main() {
-//std::cout << "ok\n";
-  DBusCalculatorService* ca = new  DBusCalculatorService("CalculatorService");
-  ca->startService();
-delete ca;
-  //TaskConsumerProducerQueue q;
-  //q.startSolveThread();
+  DBusCalculatorService::DBusCalculatorService calculator_service("CalculatorService");
+  calculator_service.startService();
 
   return 0;
 }

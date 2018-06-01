@@ -1,22 +1,22 @@
 #include <iostream>
 #include "dbus_calculator_service.h"
 
-DBusCalculatorService::DBusCalculatorService(const std::string& name)
+DBusCalculatorService::DBusCalculatorService::DBusCalculatorService(const std::string& name)
   : name_(name) {
   runtime_ = CommonAPI::Runtime::get();
-  if(runtime_ == nullptr) {
+  if (runtime_ == nullptr) {
     std::cerr << "Error in DBusCalculatorService::DBusCalculatorService(): runtime_ == nullptr\n";
     return;
   }
-  service_ = std::make_shared<CalculatorServiceStubImpl>();
+  service_ = std::make_shared<CalculatorServiceStubImpl::CalculatorServiceStubImpl>();
 }
 
-DBusCalculatorService::~DBusCalculatorService() {
+DBusCalculatorService::DBusCalculatorService::~DBusCalculatorService() {
   
 }
 
-void DBusCalculatorService::startService() {
-  if(runtime_ == nullptr) {
+void DBusCalculatorService::DBusCalculatorService::startService() {
+  if (runtime_ == nullptr) {
     std::cerr << "Error in DBusCalculatorService::startService(): runtime_ == nullptr\n";
     return;
   }

@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CalculatorService.dir/calculator_service_tasks.cc.o"
   "CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o"
   "CMakeFiles/CalculatorService.dir/main.cc.o"
-  "CMakeFiles/CalculatorService.dir/task_manager.cc.o"
+  "CMakeFiles/CalculatorService.dir/task_consumer_producer_queue.cc.o"
   "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusDeployment.cpp.o"
   "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceDBusStubAdapter.cpp.o"
   "CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o"

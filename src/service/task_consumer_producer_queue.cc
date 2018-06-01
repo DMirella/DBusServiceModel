@@ -1,17 +1,17 @@
 #include <iostream>
-#include "task_manager.h"
+#include "task_consumer_producer_queue.h"
 
-TaskConsumerProducerQueue::TaskConsumerProducerQueue() {
-  solver_thread_destroy_ = false;
+TaskConsumerProducerQueue::TaskConsumerProducerQueue::TaskConsumerProducerQueue() {
+  solver_thread_destroy_ 	    = false;
   is_need_to_destroy_solver_thread_ = false;
   task_solver_thread_ = std::thread(&TaskConsumerProducerQueue::solveThreadLogic, this);
 }
 
-TaskConsumerProducerQueue::~TaskConsumerProducerQueue() {
+TaskConsumerProducerQueue::TaskConsumerProducerQueue::~TaskConsumerProducerQueue() {
   destroySolverThread();
 }
 
-void TaskConsumerProducerQueue::addTaskToQueue(TaskSharedPtr task) {
+void TaskConsumerProducerQueue::TaskConsumerProducerQueue::addTaskToQueue(const TaskSharedPtr& task) {
   std::unique_lock<std::mutex> lock(mutex_);
   queue_.push(task);
   lock.unlock();
@@ -21,7 +21,7 @@ void TaskConsumerProducerQueue::addTaskToQueue(TaskSharedPtr task) {
   std::cout << "Reg task #" << ++call_count << std::endl;
 }
 
-void TaskConsumerProducerQueue::solveThreadLogic() {
+void TaskConsumerProducerQueue::TaskConsumerProducerQueue::solveThreadLogic() {
   auto &queue_link = queue_;
   auto &is_need_to_destroy_solver_thread_link = is_need_to_destroy_solver_thread_;
   while (true) {
@@ -32,14 +32,13 @@ void TaskConsumerProducerQueue::solveThreadLogic() {
     
     std::cout << "Queue size " << queue_.size() << std::endl;
     auto currentTask = queue_.front();
-    currentTask->solve();
+    currentTask->Solve();
     queue_.pop();
   }
   solver_thread_destroy_ = true;
 }
 
-
-void TaskConsumerProducerQueue::destroySolverThread() {
+void TaskConsumerProducerQueue::TaskConsumerProducerQueue::destroySolverThread() {
   std::unique_lock<std::mutex> lock(mutex_);
   is_need_to_destroy_solver_thread_ = true;
   auto solver_thread_destroy_link = solver_thread_destroy_;
