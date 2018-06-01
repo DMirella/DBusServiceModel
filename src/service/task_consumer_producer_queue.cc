@@ -2,9 +2,7 @@
 #include "task_consumer_producer_queue.h"
 
 TaskConsumerProducerQueue::TaskConsumerProducerQueue::TaskConsumerProducerQueue() {
-  solver_thread_destroy_ 	    = false;
-  is_need_to_destroy_solver_thread_ = false;
-  task_solver_thread_ = std::thread(&TaskConsumerProducerQueue::solveThreadLogic, this);
+  startSolverThread();
 }
 
 TaskConsumerProducerQueue::TaskConsumerProducerQueue::~TaskConsumerProducerQueue() {
@@ -36,6 +34,12 @@ void TaskConsumerProducerQueue::TaskConsumerProducerQueue::solveThreadLogic() {
     queue_.pop();
   }
   solver_thread_destroy_ = true;
+}
+
+void TaskConsumerProducerQueue::TaskConsumerProducerQueue::startSolverThread() {
+  solver_thread_destroy_ 	    = false;
+  is_need_to_destroy_solver_thread_ = false;
+  task_solver_thread_ = std::thread(&TaskConsumerProducerQueue::solveThreadLogic, this);
 }
 
 void TaskConsumerProducerQueue::TaskConsumerProducerQueue::destroySolverThread() {

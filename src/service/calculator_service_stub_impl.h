@@ -12,9 +12,9 @@ class CalculatorServiceStubImpl
  public:
   CalculatorServiceStubImpl() {}
   CalculatorServiceStubImpl(const CalculatorServiceStubImpl& service_stub) = delete;
-  CalculatorServiceStubImpl(CalculatorServiceStubImpl&& service_stub) = delete;
-
+  CalculatorServiceStubImpl(CalculatorServiceStubImpl&& service_stub)      = delete;
   virtual ~CalculatorServiceStubImpl() {}
+
   virtual void sum(const std::shared_ptr<CommonAPI::ClientId> _client, 
       		   int32_t _valueA, int32_t _valueB, sumReply_t _reply) override;
   virtual void deduct(const std::shared_ptr<CommonAPI::ClientId> _client, 

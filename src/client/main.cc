@@ -1,5 +1,3 @@
-/* This file dempnstrate API capabilities on client-side:
-   in infinity cycle generate random operation then make request to service and use bit time for sleep */
 #include <ctime>
 #include <iostream>
 #include <unistd.h>
@@ -23,7 +21,9 @@ int main(){
   srand(time(0));
 
   ClientCalculatorDBusService::ClientCalculatorDBusService service("CalculatorService");
+  std::cout << "Client has created. Wait for service...\n";
   service.makeConnection();
+  std::cout << "Service was found. Starting query cycle.\n";
 	
   int cnt = 0;
   while(1){

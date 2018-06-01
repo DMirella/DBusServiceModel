@@ -22,7 +22,7 @@ void ClientCalculatorDBusService::ClientCalculatorDBusService::makeConnection() 
 }
 
 void ClientCalculatorDBusService::ClientCalculatorDBusService::sumAsync(const int value_a, const int value_b, 
-     					      std::function<void(int)> on_answer_function) const {
+     					      const std::function<void(int)>& on_answer_function) const {
   service_proxy_->sumAsync(value_a, value_b, 
     			  [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
      	 		    on_answer_function(out);
@@ -30,7 +30,7 @@ void ClientCalculatorDBusService::ClientCalculatorDBusService::sumAsync(const in
 }
 
 void ClientCalculatorDBusService::ClientCalculatorDBusService::divideAsync(const int value_a, const int value_b, 
-      						 std::function<void(int)> on_answer_function) const {
+      						 const std::function<void(int)>& on_answer_function) const {
   service_proxy_->divideAsync(value_a, value_b, 
   			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
     			       on_answer_function(out);
@@ -38,7 +38,7 @@ void ClientCalculatorDBusService::ClientCalculatorDBusService::divideAsync(const
 }
 
 void ClientCalculatorDBusService::ClientCalculatorDBusService::deductAsync(const int value_a, const int value_b, 
-     						 std::function<void(int)> on_answer_function) const {
+     						 const std::function<void(int)>& on_answer_function) const {
   service_proxy_->deductAsync(value_a, value_b, 
   			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
    			       on_answer_function(out);
@@ -46,7 +46,7 @@ void ClientCalculatorDBusService::ClientCalculatorDBusService::deductAsync(const
 }
   
 void ClientCalculatorDBusService::ClientCalculatorDBusService::multiplyAsync(const int value_a, const int value_b, 
-     						   std::function<void(int)> on_answer_function) const {
+     						   const std::function<void(int)>& on_answer_function) const {
   service_proxy_->multiplyAsync(value_a, value_b, 
   			       [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
     			         on_answer_function(out);

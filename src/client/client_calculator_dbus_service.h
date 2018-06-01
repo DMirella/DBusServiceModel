@@ -25,13 +25,13 @@ class ClientCalculatorDBusService {
 
   void makeConnection();
   void sumAsync(const int value_a, const int value_b, 
-                   std::function<void(int)> on_answer_function) const;
+                   const std::function<void(int)>& on_answer_function) const;
   void divideAsync(const int value_a, const int value_b, 
-                   std::function<void(int)> on_answer_function) const;
+                   const std::function<void(int)>& on_answer_function) const;
   void deductAsync(const int value_a, const int value_b, 
-                      std::function<void(int)> on_answer_function) const;
+                      const std::function<void(int)>& on_answer_function) const;
   void multiplyAsync(const int value_a, const int value_b, 
-                        std::function<void(int)> on_answer_function) const;
+                        const std::function<void(int)>& on_answer_function) const;
  private:
   std::string service_name_;
   std::shared_ptr<CommonAPI::Runtime> runtime_;

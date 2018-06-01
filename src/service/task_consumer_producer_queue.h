@@ -22,6 +22,7 @@ class TaskConsumerProducerQueue {
   void addTaskToQueue(const TaskSharedPtr& task);
  private:
   void solveThreadLogic();
+  void startSolverThread();
   void destroySolverThread();
 
   std::thread task_solver_thread_;

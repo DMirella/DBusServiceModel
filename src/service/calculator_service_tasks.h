@@ -2,14 +2,12 @@
 #define DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_TASKS_H_
 
 #include <functional>
-#include <thread>
 #include "task.h"
 
 //This defines helps to test the system if it could solve a more time-consuming tasks.
 #define HARD_TASK_TIME 200
 #define TESTING_HARD_TASKS_MODEL
 
-namespace CalculatorServiceTask {
 namespace{
 const int kInfinity = 2010101010;
 
@@ -27,6 +25,8 @@ class TaskWithIntReply {
   const std::function<void(int32_t _result)> reply_;
 };
 }  // namespace
+
+namespace CalculatorServiceTask {
 
 class TaskSum : public ServiceTask::Task, 
                 public TaskWithIntReply,  

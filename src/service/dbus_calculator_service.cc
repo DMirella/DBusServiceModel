@@ -22,7 +22,7 @@ void DBusCalculatorService::DBusCalculatorService::startService() {
   }
   runtime_->registerService("", name_, service_);
   auto doServiceThreadFunc = []() {
-			       std::cout << "Calculator service was started.\n";
+  			       std::cout << "Calculator service was started. Wait for clients...\n";
   			       while (true) { 
     			         std::this_thread::sleep_for(std::chrono::seconds(kDefualtSleepSeconds));
 			       }
