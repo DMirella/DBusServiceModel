@@ -55,24 +55,24 @@ future
 -
 
 /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.cc
+client_calculator_dbus_service.h
+/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
 chrono
 -
 iostream
 -
 thread
 -
-client_calculator_dbus_service.h
-/home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
 
 /home/dima/work/DBusServiceModel/src/client/client_calculator_dbus_service.h
-CommonAPI/CommonAPI.hpp
--
 functional
 -
 memory
 -
 string
 -
+CommonAPI/CommonAPI.hpp
+/home/dima/work/DBusServiceModel/src/client/CommonAPI/CommonAPI.hpp
 v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
 /home/dima/work/DBusServiceModel/src/client/v1/com/luxoft/calculatorservice/CalculatorServiceProxy.hpp
 

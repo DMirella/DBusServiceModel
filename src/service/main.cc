@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+
 #include "dbus_calculator_service.h"
 
 int main() {
@@ -8,6 +9,6 @@ int main() {
   calculator_service.AddTaskSolver();
   std::cout << "Server was started, wait for clients...\n";
   
-  while(1) {usleep(100000);}
+  usleep(10000000);
   return 0;
 }

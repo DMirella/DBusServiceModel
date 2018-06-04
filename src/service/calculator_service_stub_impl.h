@@ -2,6 +2,7 @@
 #define DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_
 
 #include <memory>
+
 #include "CommonAPI/CommonAPI.hpp"
 #include "task_synchronical_queue.h"
 #include "v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp"
@@ -27,7 +28,7 @@ class CalculatorServiceStubImpl
   virtual void divide(const std::shared_ptr<CommonAPI::ClientId> _client, 
       		      int32_t _valueA, int32_t _valueB, divideReply_t _reply) override;
  private:
-  std::shared_ptr<TaskSynchronicalQueue> task_synchronical_queue_;
+  const std::shared_ptr<TaskSynchronicalQueue> task_synchronical_queue_;
 };
 }  // namespace DBusServiceModel
 

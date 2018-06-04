@@ -1,7 +1,12 @@
+#include "calculator_service_tasks.h"
+
 #include <chrono>
 #include <iostream>
 #include <thread>
-#include "calculator_service_tasks.h"
+
+namespace {
+const int kInfinity = 2010101010;
+}
 
 namespace DBusServiceModel {
 void TaskSum::Solve() {

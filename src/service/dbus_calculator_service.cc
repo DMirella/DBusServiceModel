@@ -1,6 +1,6 @@
-#include <iostream>
 #include "dbus_calculator_service.h"
 
+#include <iostream>
 
 namespace {
 const int _5sec = 5;
@@ -21,7 +21,7 @@ DBusCalculatorService::DBusCalculatorService(const std::string& name)
 }
 
 DBusCalculatorService::~DBusCalculatorService() {
-  task_synchronical_queue_.reset();
+  task_synchronical_queue_->Stop();
 }
 
 void DBusCalculatorService::StartService() {
