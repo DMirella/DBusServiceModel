@@ -2,12 +2,6 @@
 
 #include <iostream>
 
-namespace {
-const int _5sec = 5;
-const int kDefualtSleepSeconds = _5sec;
-const int kTaskSolverCount = 1;
-}
-
 namespace DBusServiceModel {
 DBusCalculatorService::DBusCalculatorService(const std::string& name)
   : name_(name) {

@@ -27,7 +27,7 @@ int main(){
   std::cout << "Service was found. Starting query cycle.\n";
 	
   int cnt = 0;
-  while(1){
+  while (true) {
     cnt++;
     switch(rand() % 4) {
     case 0:

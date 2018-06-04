@@ -30,7 +30,6 @@ class TaskSum : public Task,
  public:
   TaskSum(int value_a, int value_b, const std::function<void(int32_t _result)>& reply) 
     : TaskWithTwoIntParams(value_a, value_b), TaskWithIntReply(reply) {}
-  
   TaskSum() 		       		  = delete;
   TaskSum(const TaskSum& task) 		  = delete;
   TaskSum(TaskSum&& task)      		  = delete;

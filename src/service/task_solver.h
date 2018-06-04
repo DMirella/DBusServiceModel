@@ -11,7 +11,7 @@ namespace DBusServiceModel {
 class TaskSolver {
  public:
   TaskSolver(const std::shared_ptr<TaskSynchronicalQueue>& task_synchronical_queue);
-  TaskSolver() 					       = delete;
+  TaskSolver() 	        			       = delete;
   TaskSolver(const TaskSolver& task_solver) 	       = delete;
   TaskSolver(TaskSolver&& task_solver) 		       = delete;
   TaskSolver& operator=(const TaskSolver& task_solver) = delete;
