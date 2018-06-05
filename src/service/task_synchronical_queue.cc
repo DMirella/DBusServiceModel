@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "task.h"
+
 namespace DBusServiceModel {
 TaskSynchronicalQueue::TaskSynchronicalQueue() 
   : task_recieve_(true), is_need_to_destroy_(false){

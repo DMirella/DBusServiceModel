@@ -3,13 +3,14 @@
 
 #include <atomic>
 #include <condition_variable>
+#include <memory>
 #include <mutex>
 #include <queue>
 #include <thread>
 
-#include "task.h"
-
 namespace DBusServiceModel {
+class Task;
+
 class TaskSynchronicalQueue {
  public:
   TaskSynchronicalQueue(const TaskSynchronicalQueue& queue) = delete;

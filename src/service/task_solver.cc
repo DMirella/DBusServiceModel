@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+#include "task.h"
 #include "task_synchronical_queue.h"
 
 namespace DBusServiceModel {

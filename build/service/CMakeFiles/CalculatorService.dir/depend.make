@@ -36,7 +36,6 @@ service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dim
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.cc
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
-service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/task.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/task_solver.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 service/CMakeFiles/CalculatorService.dir/dbus_calculator_service.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
@@ -144,7 +143,6 @@ service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen
 
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/main.cc
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp

@@ -137,6 +137,8 @@ task_solver.h
 /home/dima/work/DBusServiceModel/src/service/task_solver.h
 iostream
 -
+task.h
+/home/dima/work/DBusServiceModel/src/service/task.h
 task_synchronical_queue.h
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
@@ -153,11 +155,15 @@ task_synchronical_queue.h
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 iostream
 -
+task.h
+/home/dima/work/DBusServiceModel/src/service/task.h
 
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 atomic
 -
 condition_variable
+-
+memory
 -
 mutex
 -
@@ -165,8 +171,6 @@ queue
 -
 thread
 -
-task.h
-/home/dima/work/DBusServiceModel/src/service/task.h
 
 /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 iostream
