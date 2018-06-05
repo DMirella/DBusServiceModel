@@ -3,33 +3,32 @@
 #include <iostream>
 
 namespace DBusServiceModel {
-TaskSynchronicalQueue::TaskSynchronicalQueue() {
-  Continue();
+TaskSynchronicalQueue::TaskSynchronicalQueue() 
+  : task_recieve_(true), is_need_to_destroy_(false){
 }
 
 TaskSynchronicalQueue::~TaskSynchronicalQueue() {
-  Stop();
+  Destroy();
 }
 
-bool TaskSynchronicalQueue::Add(const std::shared_ptr<Task>& task) {
-  if (is_stopped_ || task == nullptr) {
+bool TaskSynchronicalQueue::AddTask(const std::shared_ptr<Task>& task) {
+  if (!task_recieve_ || task == nullptr) {
     return false;
   }
-  std::unique_lock<std::mutex> lock(mutex_);
+  std::lock_guard<std::mutex> lock(mutex_);
   queue_.push(task);
   static int cnt = 0;
   std::cout << "Reg task #" << ++cnt << std::endl; 
-  lock.unlock();
   condition_variable_.notify_one();
   return true;
 }
 
-std::shared_ptr<Task> TaskSynchronicalQueue::Remove() {
+std::shared_ptr<Task> TaskSynchronicalQueue::RemoveTask() {
   std::unique_lock<std::mutex> lock(mutex_);
   condition_variable_.wait(lock, [this]() {
-    return !queue_.empty() || is_stopped_;
+    return !queue_.empty() || is_need_to_destroy_;
   });
-  if (is_stopped_) {
+  if (is_need_to_destroy_ && queue_.empty()) {
     return nullptr;
   }
   std::cout << "Queue size " << queue_.size() << std::endl; 
@@ -38,12 +37,12 @@ std::shared_ptr<Task> TaskSynchronicalQueue::Remove() {
   return current_task;
 }
 
-void TaskSynchronicalQueue::Stop() {
-  is_stopped_ = true;
+void TaskSynchronicalQueue::Destroy() {
+  set_task_recieve(false);
+  is_need_to_destroy_ = true;
+  while (!queue_.empty()) {
+    condition_variable_.notify_one();
+  }
   condition_variable_.notify_all();
-}
-
-void TaskSynchronicalQueue::Continue() {
-  is_stopped_ = false;
 }
 }  // namespace DBusServiceModel

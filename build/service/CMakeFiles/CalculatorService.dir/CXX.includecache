@@ -69,16 +69,16 @@ sstream
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.cc
 calculator_service_stub_impl.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
-calculator_service_tasks.h
-/home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
-
-/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 memory
 -
-CommonAPI/CommonAPI.hpp
-/home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
+calculator_service_tasks.h
+/home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
 task_synchronical_queue.h
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
+
+/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
+CommonAPI/CommonAPI.hpp
+/home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 /home/dima/work/DBusServiceModel/src/service/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
 
@@ -103,6 +103,10 @@ dbus_calculator_service.h
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 iostream
 -
+calculator_service_stub_impl.h
+/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
+task_solver.h
+/home/dima/work/DBusServiceModel/src/service/task_solver.h
 
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 list
@@ -111,14 +115,8 @@ memory
 -
 string
 -
-thread
--
-calculator_service_stub_impl.h
-/home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 CommonAPI/CommonAPI.hpp
 /home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
-task_solver.h
-/home/dima/work/DBusServiceModel/src/service/task_solver.h
 task_synchronical_queue.h
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
@@ -131,12 +129,16 @@ dbus_calculator_service.h
 /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 
 /home/dima/work/DBusServiceModel/src/service/task.h
+functional
+-
 
 /home/dima/work/DBusServiceModel/src/service/task_solver.cc
 task_solver.h
 /home/dima/work/DBusServiceModel/src/service/task_solver.h
 iostream
 -
+task_synchronical_queue.h
+/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
 /home/dima/work/DBusServiceModel/src/service/task_solver.h
 atomic
@@ -145,8 +147,6 @@ memory
 -
 thread
 -
-task_synchronical_queue.h
-/home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.cc
 task_synchronical_queue.h

@@ -6,25 +6,28 @@
 #include <mutex>
 #include <queue>
 #include <thread>
+
 #include "task.h"
 
 namespace DBusServiceModel {
 class TaskSynchronicalQueue {
  public:
-  TaskSynchronicalQueue();
-  TaskSynchronicalQueue(const TaskSynchronicalQueue& queue) 	       = delete;
-  TaskSynchronicalQueue(TaskSynchronicalQueue&& queue) 		       = delete;
+  TaskSynchronicalQueue(const TaskSynchronicalQueue& queue) = delete;
+  TaskSynchronicalQueue(TaskSynchronicalQueue&& queue) = delete;
   TaskSynchronicalQueue& operator=(const TaskSynchronicalQueue& queue) = delete;
-  TaskSynchronicalQueue& operator=(TaskSynchronicalQueue&& queue)      = delete;
+  TaskSynchronicalQueue& operator=(TaskSynchronicalQueue&& queue) = delete;
+
+  TaskSynchronicalQueue();
   ~TaskSynchronicalQueue();
 
-  bool Add(const std::shared_ptr<Task>& task);
-  std::shared_ptr<Task> Remove();
+  bool AddTask(const std::shared_ptr<Task>& task);
+  std::shared_ptr<Task> RemoveTask();
+  void Destroy();
 
-  void Stop();
-  void Continue();
+  inline void set_task_recieve(bool mode) { task_recieve_ = mode; }
  private:
-  std::atomic<bool> is_stopped_;
+  std::atomic<bool> task_recieve_;
+  std::atomic<bool> is_need_to_destroy_;
   std::queue<std::shared_ptr<Task>> queue_;
   std::mutex mutex_;
   std::condition_variable condition_variable_;

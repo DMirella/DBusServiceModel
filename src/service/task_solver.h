@@ -5,17 +5,18 @@
 #include <memory>
 #include <thread>
 
-#include "task_synchronical_queue.h"
-
 namespace DBusServiceModel {
+class TaskSynchronicalQueue;
+
 class TaskSolver {
  public:
-  TaskSolver(const std::shared_ptr<TaskSynchronicalQueue>& task_synchronical_queue);
-  TaskSolver() 	        			       = delete;
-  TaskSolver(const TaskSolver& task_solver) 	       = delete;
-  TaskSolver(TaskSolver&& task_solver) 		       = delete;
+  TaskSolver() = delete;
+  TaskSolver(const TaskSolver& task_solver) = delete;
+  TaskSolver(TaskSolver&& task_solver) = delete;
   TaskSolver& operator=(const TaskSolver& task_solver) = delete;
-  TaskSolver& operator=(TaskSolver&& task_solver)      = delete;
+  TaskSolver& operator=(TaskSolver&& task_solver) = delete;
+
+  TaskSolver(TaskSynchronicalQueue* task_synchronical_queue);
   ~TaskSolver();
 
   void StartSolverThread();
@@ -23,7 +24,7 @@ class TaskSolver {
  private:
   void TaskSolverThreadLogic();
 
-  std::weak_ptr<TaskSynchronicalQueue> task_synchronical_queue_;
+  TaskSynchronicalQueue* task_synchronical_queue_;
   std::thread task_solver_thread_;
   std::atomic<bool> is_solver_thread_need_to_destroy_;
   std::atomic<bool> is_solver_thread_destroyed_;

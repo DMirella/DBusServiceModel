@@ -81,6 +81,8 @@ ctime
 -
 iostream
 -
+string
+-
 unistd.h
 -
 client_calculator_dbus_service.h

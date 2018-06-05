@@ -143,14 +143,9 @@ service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o
- /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorService.hpp
- /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStub.hpp
- /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
- /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
  /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
  /home/dima/work/DBusServiceModel/src/service/main.cc
  /home/dima/work/DBusServiceModel/src/service/task.h
- /home/dima/work/DBusServiceModel/src/service/task_solver.h
  /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
@@ -165,7 +160,6 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
- /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
  /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 service/CMakeFiles/CalculatorService.dir/task_solver.cc.o

@@ -142,14 +142,9 @@ service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen
 service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 service/CMakeFiles/CalculatorService.dir/home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.cpp.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorService.hpp
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStub.hpp
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src-gen/v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/dbus_calculator_service.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/main.cc
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task.h
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task_solver.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Address.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Attribute.hpp
@@ -164,7 +159,6 @@ service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Factory.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/MainLoopContext.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Runtime.hpp
-service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Stub.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Types.hpp
 service/CMakeFiles/CalculatorService.dir/main.cc.o: /home/dima/work/capicxx-core-runtime/include/CommonAPI/Version.hpp
 
