@@ -9,7 +9,7 @@ int main() {
   DBusServiceModel::DBusCalculatorService calculator_service(kServiceName);
   calculator_service.AddTaskSolver();
   std::cout << "Server was started, wait for clients...\n";
-  
+
   usleep(kMainTimeOut);
   return 0;
 }

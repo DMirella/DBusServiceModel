@@ -4,7 +4,6 @@
 #include <functional>
 
 #include "task.h"
-
 //This defines helps to test the system if it could solve a more time-consuming tasks.
 #define TESTING_HARD_TASKS_MODEL
 

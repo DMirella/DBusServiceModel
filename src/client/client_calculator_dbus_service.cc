@@ -4,6 +4,7 @@
 #include <iostream>
 #include <thread>
 
+namespace DBusServiceModel {
 namespace {
 const auto kDefaultTimeoutTime = std::chrono::seconds(10000000);
 const auto kStartMakeConnectionSleepForTime = std::chrono::seconds(5);
@@ -12,7 +13,6 @@ int64_t gLastRegId = 0;
 const CommonAPI::CallInfo gCallinfo = CommonAPI::CallInfo(kDefaultTimeoutTime.count());
 }
 
-namespace DBusServiceModel {
 ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& service_name) 
   : service_name_(service_name), runtime_(nullptr), service_proxy_(nullptr) {
   if (!(is_client_ready_ = Initialization())) {
