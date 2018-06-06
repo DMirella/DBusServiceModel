@@ -13,7 +13,7 @@ class Task {
 
 class TaskWithTwoIntParamsAndIntReply : public Task {
  public:
-  TaskWithTwoIntParamsAndIntReply(int value_a, int value_b, std::function<void(int)> reply)
+  TaskWithTwoIntParamsAndIntReply(int value_a, int value_b, const std::function<void(int)>& reply)
     : value_a_(value_a), value_b_(value_b), reply_(reply) {}
   virtual ~TaskWithTwoIntParamsAndIntReply() {}
  protected:
