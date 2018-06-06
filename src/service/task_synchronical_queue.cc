@@ -19,8 +19,8 @@ bool TaskSynchronicalQueue::AddTask(const std::shared_ptr<Task>& task) {
   }
   std::lock_guard<std::mutex> lock(mutex_);
   queue_.push(task);
-  static int cnt = 0;
-  std::cout << "Reg task #" << ++cnt << std::endl; 
+  static int reg_task_count = 0;
+  std::cout << "Reg task #" << ++reg_task_count << std::endl; 
   condition_variable_.notify_one();
   return true;
 }

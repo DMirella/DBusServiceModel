@@ -24,13 +24,18 @@ int main(){
   srand(time(0));
   const std::string kServiceName = "CalculatorService";
   const int kCountTryToConnectionService = 5;
+  const int kTimeoutTimeNs = 100000;
 
   DBusServiceModel::ClientCalculatorDBusService service(kServiceName);
   std::cout << "Client has created. Wait for service...\n";
+  bool connect_result = false;
   for (int current_try = kCountTryToConnectionService; current_try >= 0; --current_try) {
-    if (service.WaitAvailable()) break;
+    if (service.WaitAvailable()) {
+      connect_result = true;
+      break;
+    }
   }
-  if (!service.WaitAvailable()) {
+  if (!connect_result) {
     std::cerr << "Connection to service failed.\n";
     return 0;
   }
@@ -53,7 +58,7 @@ int main(){
       break;
     }
     std::cout << "Service call #" << call_count++ << std::endl;
-    usleep(100000);
+    usleep(kTimeoutTimeNs);
   }
   return 0;
 }
