@@ -2,7 +2,6 @@ package com.luxoft.calculatorservice
 
 interface CalculatorService{
   version{major 1 minor 0}
-
   method sum{
     in{
       Int32 valueA
@@ -12,7 +11,6 @@ interface CalculatorService{
       Int32 result
     }
   }
-
   method deduct{
     in{
       Int32 valueA
@@ -22,7 +20,6 @@ interface CalculatorService{
       Int32 result
     }
   }
-
   method multiply{
     in{
       Int32 valueA
@@ -32,7 +29,6 @@ interface CalculatorService{
       Int32 result
     }
   }
-
   method divide{
     in{
       Int32 valueA
