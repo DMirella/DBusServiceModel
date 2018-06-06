@@ -28,6 +28,8 @@ class ClientCalculatorDBusService {
   void MultiplyAsync(int value_a, int value_b, const std::function<void(int)>& on_answer_function) const;
  private:
   bool Initialization();
+  void OnRecieveServiceIntAnswer(int answer, const std::function<void(int)>& on_answer_function, 
+			         const CommonAPI::CallStatus& status) const;
 
   bool is_client_ready_;
   std::string service_name_;

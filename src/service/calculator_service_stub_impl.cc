@@ -1,7 +1,6 @@
 #include "calculator_service_stub_impl.h"
 
 #include <iostream>
-#include <memory>
 
 #include "calculator_service_tasks.h"
 #include "task_synchronical_queue.h"

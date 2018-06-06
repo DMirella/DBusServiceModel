@@ -71,8 +71,6 @@ calculator_service_stub_impl.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
 iostream
 -
-memory
--
 calculator_service_tasks.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_tasks.h
 task_synchronical_queue.h

@@ -9,7 +9,6 @@
 
 namespace DBusServiceModel {
 class TaskSynchronicalQueue;
-
 class CalculatorServiceStubImpl
     : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault {
  public:

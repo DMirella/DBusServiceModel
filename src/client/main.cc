@@ -22,9 +22,12 @@ void onDedResultRecieved(int answer){
 
 int main(){
   srand(time(0));
+
   const std::string kServiceName = "CalculatorService";
   const int kCountTryToConnectionService = 5;
   const int kTimeoutTimeNs = 100000;
+  const int kValueA = 6;
+  const int kValueB = 2;
 
   DBusServiceModel::ClientCalculatorDBusService service(kServiceName);
   std::cout << "Client has created. Wait for service...\n";
@@ -45,16 +48,16 @@ int main(){
   while (true) {
     switch(rand() % 4) {
     case 0:
-      service.SumAsync(6, 2, onSumResultRecieved);
+      service.SumAsync(kValueA, kValueB, onSumResultRecieved);
       break;
     case 1:
-      service.DeductAsync(6, 2, onDedResultRecieved);
+      service.DeductAsync(kValueA, kValueB, onDedResultRecieved);
       break;
     case 2:
-      service.MultiplyAsync(6, 2, onMulResultRecieved);
+      service.MultiplyAsync(kValueA, kValueB, onMulResultRecieved);
       break;
     case 3:
-      service.DivideAsync(6, 2, onDivResultRecieved);
+      service.DivideAsync(kValueA, kValueB, onDivResultRecieved);
       break;
     }
     std::cout << "Service call #" << call_count++ << std::endl;

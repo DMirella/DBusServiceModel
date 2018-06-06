@@ -25,20 +25,20 @@ bool ClientCalculatorDBusService::WaitAvailable() {
     std::cerr << "Error in ClientCalculatorDBusService::WaitAvailable(): is_client_ready_ == false";
     return false;
   }
-
   std::cout << "Waiting for available service...\n";
+  bool service_available = false;
   for (auto sleep_time = kStartMakeConnectionSleepForTime; sleep_time > kZeroSeconds; sleep_time /= 2) {
     if (service_proxy_->isAvailable()) {
+      service_available = true;
       break;
     }
     std::cout << "Wait for " << sleep_time.count() << " seconds.\n";
     std::this_thread::sleep_for(sleep_time);
   }
-  bool result = service_proxy_->isAvailable();
-  if (result) {
+  if (!service_available) {
     std::cout << "Service not available now.\n";
   }
-  return result;
+  return true;
 }
 
 void ClientCalculatorDBusService::SumAsync(int value_a, int value_b, 
@@ -48,8 +48,8 @@ void ClientCalculatorDBusService::SumAsync(int value_a, int value_b,
     return;
   }
   service_proxy_->sumAsync(value_a, value_b, 
-    			  [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
-     	 		    on_answer_function(out);
+    			  [this, &on_answer_function](const CommonAPI::CallStatus& callstatus, int out) {
+    			    OnRecieveServiceIntAnswer(out, on_answer_function, callstatus);
   			  }, &gCallinfo);
 }
 
@@ -60,8 +60,8 @@ void ClientCalculatorDBusService::DivideAsync(int value_a, int value_b,
     return;
   }
   service_proxy_->divideAsync(value_a, value_b, 
-  			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
-    			       on_answer_function(out);
+  			     [this, &on_answer_function](const CommonAPI::CallStatus& callstatus, int out) {
+    			       OnRecieveServiceIntAnswer(out, on_answer_function, callstatus);
   			     }, &gCallinfo);
 }
 
@@ -72,8 +72,8 @@ void ClientCalculatorDBusService::DeductAsync(int value_a, int value_b,
     return;
   }
   service_proxy_->deductAsync(value_a, value_b, 
-  			     [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
-   			       on_answer_function(out);
+  			     [this, &on_answer_function](const CommonAPI::CallStatus& callstatus, int out) {
+    			       OnRecieveServiceIntAnswer(out, on_answer_function, callstatus);
   		 	     }, &gCallinfo);
 }
   
@@ -84,8 +84,8 @@ void ClientCalculatorDBusService::MultiplyAsync(int value_a, int value_b,
     return;
   }
   service_proxy_->multiplyAsync(value_a, value_b, 
-  			       [&on_answer_function](CommonAPI::CallStatus callstatus, int out) {
-    			         on_answer_function(out);
+  			       [this, &on_answer_function](const CommonAPI::CallStatus& callstatus, int out) {
+    			         OnRecieveServiceIntAnswer(out, on_answer_function, callstatus);
   			       }, &gCallinfo);
 }
 
@@ -104,5 +104,14 @@ bool ClientCalculatorDBusService::Initialization() {
   }
   ++gLastRegId;
   return true;
+}
+
+void ClientCalculatorDBusService::OnRecieveServiceIntAnswer(int answer, const std::function<void(int)>& on_answer_function,
+							    const CommonAPI::CallStatus& callstatus) const {
+  if (callstatus != CommonAPI::CallStatus::SUCCESS) {
+    std::cerr << "Service call failed!\n";
+    return;
+  }
+  on_answer_function(answer);
 }
 }  // namespace DBusServiceModel
