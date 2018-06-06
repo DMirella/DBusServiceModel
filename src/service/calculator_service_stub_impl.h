@@ -9,6 +9,7 @@
 
 namespace DBusServiceModel {
 class TaskSynchronicalQueue;
+
 class CalculatorServiceStubImpl
     : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault {
  public:
@@ -31,7 +32,7 @@ class CalculatorServiceStubImpl
   virtual void divide(const std::shared_ptr<CommonAPI::ClientId> _client, 
       		      int32_t _valueA, int32_t _valueB, divideReply_t _reply) override;
  private:
-  TaskSynchronicalQueue *task_synchronical_queue_;
+  TaskSynchronicalQueue* task_synchronical_queue_;
 };
 }  // namespace DBusServiceModel
 

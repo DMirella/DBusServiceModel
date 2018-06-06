@@ -7,7 +7,7 @@
 
 namespace DBusServiceModel {
 CalculatorServiceStubImpl::CalculatorServiceStubImpl(TaskSynchronicalQueue* task_synchronical_queue) 
-  : task_synchronical_queue_(task_synchronical_queue) {
+    : task_synchronical_queue_(task_synchronical_queue) {
   if (task_synchronical_queue_ == nullptr) {
     std::cerr << "Error in CalculatorServiceStubImpl::CalculatorServiceStubImpl(...): task_synchronical_queue_ == nullptr\n";
   }

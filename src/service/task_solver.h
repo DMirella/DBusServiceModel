@@ -6,6 +6,7 @@
 
 namespace DBusServiceModel {
 class TaskSynchronicalQueue;
+
 class TaskSolver {
  public:
   TaskSolver() = delete;

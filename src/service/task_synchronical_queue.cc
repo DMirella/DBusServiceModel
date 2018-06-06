@@ -6,7 +6,7 @@
 
 namespace DBusServiceModel {
 TaskSynchronicalQueue::TaskSynchronicalQueue() 
-  : task_recieve_(true), is_need_to_destroy_(false){
+    : task_recieve_(true), is_need_to_destroy_(false) {
 }
 
 TaskSynchronicalQueue::~TaskSynchronicalQueue() {

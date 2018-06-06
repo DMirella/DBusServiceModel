@@ -1,5 +1,6 @@
-#include <iostream>
 #include <unistd.h>
+
+#include <iostream>
 
 #include "dbus_calculator_service.h"
 

@@ -1,7 +1,8 @@
+#include <unistd.h>
+
 #include <ctime>
 #include <iostream>
 #include <string>
-#include <unistd.h>
 
 #include "client_calculator_dbus_service.h"
 
@@ -32,7 +33,7 @@ int main(){
   DBusServiceModel::ClientCalculatorDBusService service(kServiceName);
   std::cout << "Client has created. Wait for service...\n";
   bool connect_result = false;
-  for (int current_try = kCountTryToConnectionService; current_try >= 0; --current_try) {
+  for (int current_try = 0; current_try < kCountTryToConnectionService; ++current_try) {
     if (service.WaitAvailable()) {
       connect_result = true;
       break;

@@ -12,6 +12,7 @@
 namespace DBusServiceModel {
 class CalculatorServiceStubImpl;
 class TaskSolver;
+
 class DBusCalculatorService {
  public:
   DBusCalculatorService() = delete;

@@ -7,9 +7,9 @@
 
 namespace DBusServiceModel {
 TaskSolver::TaskSolver(TaskSynchronicalQueue* task_synchronical_queue) 
-  : task_synchronical_queue_(task_synchronical_queue), 
-    is_solver_thread_destroyed_(true),
-    is_solver_thread_need_to_destroy_(false) {
+    : task_synchronical_queue_(task_synchronical_queue), 
+      is_solver_thread_destroyed_(true),
+      is_solver_thread_need_to_destroy_(false) {
   if (task_synchronical_queue_ == nullptr) {
     std::cerr << "Error in TaskSolver::TaskSolver(...): task_synchronical_queue_ == nullptr\n";
     return;
@@ -31,22 +31,22 @@ void TaskSolver::StartSolverThread() {
 }
 
 void TaskSolver::TryToDestroySolverThread() {
-  if (is_solver_thread_destroyed_) { return; }
-  is_solver_thread_need_to_destroy_ = true;
+  if (is_solver_thread_destroyed_) {
+    is_solver_thread_need_to_destroy_ = true;
+  }
 }
 
 void TaskSolver::TaskSolverThreadLogic() {
   while (!is_solver_thread_need_to_destroy_) {
-    if (task_synchronical_queue_ != nullptr) {
-      auto current_task = task_synchronical_queue_->RemoveTask();
-      if (current_task == nullptr) {
-        break;
-      }
-      current_task->Solve();
-    } else {
+    if (task_synchronical_queue_ == nullptr) {
       std::cerr << "Error in TaskSolver::TaskSolverThreadLogic(): task_synchronical_queue_ == nullptr\n";
       break;
     }
+    auto current_task = task_synchronical_queue_->RemoveTask();
+    if (current_task == nullptr) {
+      break;
+    }
+    current_task->Solve();
   }
   is_solver_thread_destroyed_ = true;
 }

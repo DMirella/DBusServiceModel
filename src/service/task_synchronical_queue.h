@@ -10,6 +10,7 @@
 
 namespace DBusServiceModel {
 class Task;
+
 class TaskSynchronicalQueue {
  public:
   TaskSynchronicalQueue(const TaskSynchronicalQueue& queue) = delete;
