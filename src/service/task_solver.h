@@ -2,7 +2,6 @@
 #define DBUSSERVICEMODEL_SRC_SERVICE_TASK_SOLVER_H_
 
 #include <atomic>
-#include <memory>
 #include <thread>
 
 namespace DBusServiceModel {

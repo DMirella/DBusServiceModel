@@ -69,6 +69,8 @@ sstream
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.cc
 calculator_service_stub_impl.h
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
+iostream
+-
 memory
 -
 calculator_service_tasks.h
@@ -77,6 +79,8 @@ task_synchronical_queue.h
 /home/dima/work/DBusServiceModel/src/service/task_synchronical_queue.h
 
 /home/dima/work/DBusServiceModel/src/service/calculator_service_stub_impl.h
+memory
+-
 CommonAPI/CommonAPI.hpp
 /home/dima/work/DBusServiceModel/src/service/CommonAPI/CommonAPI.hpp
 v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp
@@ -144,8 +148,6 @@ task_synchronical_queue.h
 
 /home/dima/work/DBusServiceModel/src/service/task_solver.h
 atomic
--
-memory
 -
 thread
 -

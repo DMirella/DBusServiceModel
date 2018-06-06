@@ -14,7 +14,7 @@ const CommonAPI::CallInfo gCallinfo = CommonAPI::CallInfo(kDefaultTimeoutTime.co
 }
 
 ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& service_name) 
-  : service_name_(service_name), runtime_(nullptr), service_proxy_(nullptr) {
+  : service_name_(service_name), runtime_(nullptr), service_proxy_(nullptr), is_client_ready_(false) {
   if (!(is_client_ready_ = Initialization())) {
     std::cerr << "Initialization failed.\n";
   }
@@ -22,7 +22,7 @@ ClientCalculatorDBusService::ClientCalculatorDBusService(const std::string& serv
 
 bool ClientCalculatorDBusService::WaitAvailable() {
   if (!is_client_ready_) {
-    std::cerr << "Error in ClientCalculatorDBusService::WaitAvailable(): is_service_ready_ == false";
+    std::cerr << "Error in ClientCalculatorDBusService::WaitAvailable(): is_client_ready_ == false";
     return false;
   }
 

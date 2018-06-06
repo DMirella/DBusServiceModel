@@ -7,7 +7,7 @@
 
 namespace DBusServiceModel {
 DBusCalculatorService::DBusCalculatorService(const std::string& name)
-  : name_(name), runtime_(nullptr), service_(nullptr) {
+  : name_(name), runtime_(nullptr), service_(nullptr), is_service_ready_(false) {
   if (!(is_service_ready_ = Initialization())) {
      std::cerr << "Initialization failed!\n";
   }

@@ -7,7 +7,13 @@
 
 namespace DBusServiceModel {
 TaskSolver::TaskSolver(TaskSynchronicalQueue* task_synchronical_queue) 
-  : task_synchronical_queue_(task_synchronical_queue), is_solver_thread_destroyed_(true) {
+  : task_synchronical_queue_(task_synchronical_queue), 
+    is_solver_thread_destroyed_(true),
+    is_solver_thread_need_to_destroy_(false) {
+  if (task_synchronical_queue_ == nullptr) {
+    std::cerr << "Error in TaskSolver::TaskSolver(...): task_synchronical_queue_ == nullptr\n";
+    return;
+  }
   StartSolverThread();
 }
 
@@ -38,6 +44,7 @@ void TaskSolver::TaskSolverThreadLogic() {
       }
       current_task->Solve();
     } else {
+      std::cerr << "Error in TaskSolver::TaskSolverThreadLogic(): task_synchronical_queue_ == nullptr\n";
       break;
     }
   }

@@ -16,7 +16,7 @@ class TaskSum : public TaskWithTwoIntParamsAndIntReply {
   TaskSum& operator=(const TaskSum& task) = delete;
   TaskSum& operator=(TaskSum&& task) = delete;
 
-  TaskSum(int value_a, int value_b, const std::function<void(int32_t _result)>& reply) 
+  TaskSum(int value_a, int value_b, const std::function<void(int)>& reply) 
     : TaskWithTwoIntParamsAndIntReply(value_a, value_b, reply) {}
   ~TaskSum() {}
   // Task
@@ -31,7 +31,7 @@ class TaskDeduct : public TaskWithTwoIntParamsAndIntReply {
   TaskDeduct& operator=(const TaskDeduct& task) = delete;
   TaskDeduct& operator=(TaskDeduct&& task) = delete;
 
-  TaskDeduct(int value_a, int value_b, const std::function<void(int32_t _result)>& reply) 
+  TaskDeduct(int value_a, int value_b, const std::function<void(int)>& reply) 
     : TaskWithTwoIntParamsAndIntReply(value_a, value_b, reply) {}
   ~TaskDeduct() {}
   // Task
@@ -46,7 +46,7 @@ class TaskMultiply : public TaskWithTwoIntParamsAndIntReply {
   TaskMultiply& operator=(const TaskMultiply& task) = delete;
   TaskMultiply& operator=(TaskMultiply&& task) = delete;
 
-  TaskMultiply(int value_a, int value_b, const std::function<void(int32_t _result)>& reply) 
+  TaskMultiply(int value_a, int value_b, const std::function<void(int)>& reply) 
     : TaskWithTwoIntParamsAndIntReply(value_a, value_b, reply) {}
   ~TaskMultiply() {}
   // Task
@@ -61,7 +61,7 @@ class TaskDivide : public TaskWithTwoIntParamsAndIntReply {
   TaskDivide& operator=(const TaskDivide& task) = delete;
   TaskDivide& operator=(TaskDivide&& task) = delete;
 
-  TaskDivide(int value_a, int value_b, const std::function<void(int32_t _result)>& reply) 
+  TaskDivide(int value_a, int value_b, const std::function<void(int)>& reply) 
     : TaskWithTwoIntParamsAndIntReply(value_a, value_b, reply) {}
   ~TaskDivide() {}
   // Task

@@ -1,6 +1,8 @@
 #ifndef DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_
 #define DBUSSERVICEMODEL_SRC_SERVICE_CALCULATOR_SERVICE_STUB_IMPL_H_
 
+#include <memory>
+
 #include "CommonAPI/CommonAPI.hpp"
 
 #include "v1/com/luxoft/calculatorservice/CalculatorServiceStubDefault.hpp"
@@ -9,7 +11,7 @@ namespace DBusServiceModel {
 class TaskSynchronicalQueue;
 
 class CalculatorServiceStubImpl
-    : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault{
+    : public v1::com::luxoft::calculatorservice::CalculatorServiceStubDefault {
  public:
   CalculatorServiceStubImpl() = delete;
   CalculatorServiceStubImpl(const CalculatorServiceStubImpl& service_stub) = delete;
